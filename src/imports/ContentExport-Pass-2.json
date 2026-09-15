@@ -1,0 +1,251 @@
+[
+  {
+    "PageID": 20, "PageTitle": "SWARM Overview", "PageSlug": "/solutions/swarm",
+    "HeroTitle": "SWARM", "HeroSubtitle": "Self-Organizing Workforce for Autonomous Resource Management", "HeroBadge": "Autonomous Security Operations",
+    "ParagraphContentHTML": "Deploy intelligent agents that think, adapt, and execute security operations autonomously \u2014 even in air-gapped networks and environments where cloud AI cannot reach.",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"The Limitation of Cloud-Dependent AI","SectionBackgroundVariant":"slate-50","SectionNotes":"4 problem cards: Air-Gapped Networks, Strict Firewalls, Detection Risk, Latency."},
+      {"SectionNumber":2,"SectionTitleH2":"Five Architectural Pillars","SectionNotes":"Agents, Vessels, Embedded AI, Communications, Central Management \u2014 each links to sub-page."},
+      {"SectionNumber":3,"SectionTitleH2":"What Makes SWARM Different","SectionNotes":"6 differentiator cards: True Autonomy, Air-Gap Capable, Physical Deployment, Resilient Communications, Intent Journaling, Fleet Management."},
+      {"SectionNumber":4,"SectionTitleH2":"Vessel Types","SectionNotes":"6 vessels: PHANTOM (Raspberry Pi), SPECTER (VM), WRAITH (Container), SHADE (Memory-Resident), ECHO (Network Appliance), MIRAGE (Mobile)."},
+      {"SectionNumber":5,"SectionTitleH2":"Use Cases","SectionNotes":"Penetration Testing, Red Team Operations, ICS/SCADA Assessment, Continuous Security Validation."},
+      {"SectionNumber":6,"SectionTitleH2":"SWARM vs Traditional Agents","SectionNotes":"Comparison table: Primary Use Case, Connectivity, Air-Gap Support, Network Traversal, Physical Deployment, Offensive Capability, Stealth."}
+    ]
+  },
+  {
+    "PageID": 21, "PageTitle": "SWARM Agents", "PageSlug": "/solutions/swarm/agents",
+    "HeroTitle": "Agent Architecture", "HeroSubtitle": "Autonomous Intelligence That Thinks and Adapts", "HeroBadge": "Core Architecture",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Four-Layer Agent Architecture","SectionNotes":"Cognitive Layer (Embedded AI Model, Decision Engine, Mission Planner), Operational Layer (Scan Engine, Exploit Framework, Credential Manager), State Management Layer (Position Tracker, Findings Store, Intent Journal), Communication Layer (Uplink Controller, Peer-to-Peer Mesh, Dead Drop Protocol)."},
+      {"SectionNumber":2,"SectionTitleH2":"Agent Specializations","SectionNotes":"6 types: Reconnaissance Agent, Exploitation Agent, Pivot Agent, Relay Agent, Exfiltration Agent, Persistence Agent \u2014 each with 4 capabilities."},
+      {"SectionNumber":3,"SectionTitleH2":"Decision Framework","SectionNotes":"Hard Rules (6 non-negotiable constraints) and Soft Rules (6 preferences). Decision steps: Generate Candidates, Score, Apply Hard Rules, Evaluate Soft Rules, Select, Record Intent."}
+    ]
+  },
+  {
+    "PageID": 22, "PageTitle": "SWARM Vessels", "PageSlug": "/solutions/swarm/vessels",
+    "HeroTitle": "Vessel Types", "HeroSubtitle": "Hardware and Software Containers for Agent Deployment", "HeroBadge": "Deployment Containers",
+    "SectionNotes": "6 detailed vessel profiles with specs tables: PHANTOM (Pi, 512MB-8GB, 72hr battery, WiFi/Eth/4G/USB), SPECTER (VM, VMware/HyperV/KVM, 2-16GB, AWS/Azure/GCP), WRAITH (Container, Docker/K8s/CRI-O, <50MB), SHADE (Memory-Resident, fileless, process hollowing), ECHO (Network appliance, inline MITM), MIRAGE (Mobile, WiFi/BLE recon)."
+  },
+  {
+    "PageID": 23, "PageTitle": "Thread Fabric", "PageSlug": "/solutions/swarm/thread-fabric",
+    "HeroTitle": "Thread Fabric", "HeroSubtitle": "From Trigger to Outcome: Complete Visibility Across Every Boundary", "HeroBadge": "Transaction Tracing",
+    "ParagraphContentHTML": "Like a database transaction ID, but for distributed AI workflows. Trace every agent action, every decision, every external call \u2014 with full explainability.",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"What is Thread?","SectionNotes":"ACID analogy. Thread enables: end-to-end visibility, investigation, compliance, performance analysis, root cause analysis."},
+      {"SectionNumber":2,"SectionTitleH2":"Thread Fabric Architecture","SectionNotes":"Hierarchical span structure diagram."},
+      {"SectionNumber":3,"SectionTitleH2":"Sentinel Integration","SectionNotes":"Health Monitoring, Anomaly Detection, Self-Healing Actions."},
+      {"SectionNumber":4,"SectionTitleH2":"Investigation Workflow","SectionNotes":"4-step: Locate Thread, View Overview, Drill Into Decision, Root Cause Identified. JSON decision example included."}
+    ]
+  },
+  {
+    "PageID": 24, "PageTitle": "SWARM Communications", "PageSlug": "/solutions/swarm/communications",
+    "HeroTitle": "Communications", "HeroSubtitle": "Multi-Channel Resilient Data Transfer", "HeroBadge": "Resilient Comms",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Primary Channel: HTTPS/TLS","SectionNotes":"Port 443, 1+ Mbps, Medium stealth, domain fronting, cert pinning, chunked transfer."},
+      {"SectionNumber":2,"SectionTitleH2":"Secondary Channels","SectionNotes":"DNS Tunneling (Port 53, ~10Kbps, High stealth) and ICMP Covert Channel (~1Kbps, High stealth)."},
+      {"SectionNumber":3,"SectionTitleH2":"Tertiary/Fallback Channels","SectionNotes":"4G/LTE Out-of-Band, Dead Drop Protocol, Peer Relay."},
+      {"SectionNumber":4,"SectionTitleH2":"Hydration Protocol","SectionNotes":"5 phases: Reconnection, State Sync, Delta Transfer, Central Processing, Agent Update."},
+      {"SectionNumber":5,"SectionTitleH2":"Data Transfer Optimizations","SectionNotes":"Delta Compression, Priority Queuing, Bandwidth Adaptation, Resumable Transfer, Deduplication, Integrity Verification."},
+      {"SectionNumber":6,"SectionTitleH2":"Air-Gap Crossing","SectionNotes":"USB Dead Drop (AES-256-GCM), Cellular Out-of-Band, Serial Link Bridge, RF Exfiltration."},
+      {"SectionNumber":7,"SectionTitleH2":"Peer-to-Peer Mesh","SectionNotes":"Automatic Discovery, Trust Verification, Onion Routing, Dynamic Rerouting."},
+      {"SectionNumber":8,"SectionTitleH2":"Steganography","SectionNotes":"Image Steganography, Protocol Header Stuffing, Timing Channel."}
+    ]
+  },
+  {
+    "PageID": 25, "PageTitle": "SWARM Central Management", "PageSlug": "/solutions/swarm/central-management",
+    "HeroTitle": "Central Management", "HeroSubtitle": "Real-time visibility into your autonomous agent fleet", "HeroBadge": "Command & Control",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Fleet Dashboard","SectionNotes":"Mock UI with ACTIVE/IDLE/MISSING/LOST/COMPLETE agent counts."},
+      {"SectionNumber":2,"SectionTitleH2":"Agent Lifecycle","SectionNotes":"8 states: PROVISIONED, DEPLOYED, ACTIVE, IDLE, MISSING, LOST, COMPLETE, EXTRACTED/WIPED/DESTROYED."},
+      {"SectionNumber":3,"SectionTitleH2":"Real-Time Controls","SectionNotes":"Redirect, Pause, Abort, Extract."},
+      {"SectionNumber":4,"SectionTitleH2":"Reports","SectionNotes":"6 types: Attack Graph, Vulnerability Report, Executive Summary, Activity Timeline, Asset Inventory, Credential Report."},
+      {"SectionNumber":5,"SectionTitleH2":"Platform Integrations","SectionNotes":"Aurix Lattice, Aurix Prism, AgenticMind."}
+    ]
+  },
+  {
+    "PageID": 26, "PageTitle": "SWARM Deployment", "PageSlug": "/solutions/swarm/deployment",
+    "HeroTitle": "Deploy Intelligence Anywhere", "HeroSubtitle": "Any Cloud. Any Data Center. Any Edge Device.", "HeroBadge": "Distributed Architecture",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Universal Deployment Model"},
+      {"SectionNumber":2,"SectionTitleH2":"The SWARM Relay","SectionNotes":"6 features: Local Execution, Health Monitoring, Thread Publishing, Policy Enforcement, Connection Management, Offline Resilience. Deployment options: AWS/Azure/GCP/On-Premise/Edge with RAM specs."},
+      {"SectionNumber":3,"SectionTitleH2":"Thread Headers","SectionNotes":"X-Aurix-Thread-ID, X-Aurix-Parent-Span, X-Aurix-Sovereignty, X-Aurix-Classification."}
+    ]
+  },
+  {
+    "PageID": 27, "PageTitle": "SWARM Embedded AI", "PageSlug": "/solutions/swarm/embedded-ai",
+    "HeroTitle": "Embedded AI", "HeroSubtitle": "Edge Intelligence Without Cloud", "HeroBadge": "Local Intelligence",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Four AI Tiers","SectionNotes":"Tier 1 MICRO: TinyLlama 1.1B, <512MB, Pi Zero. Tier 2 STANDARD: Phi-3 Mini 3.8B, 2-4GB. Tier 3 ENHANCED: Mistral 7B, 8GB+. Tier 4 FULL: Llama 3.1 8B, 16GB+/GPU."},
+      {"SectionNumber":2,"SectionTitleH2":"Training Data","SectionNotes":"CVE Database 200K+, Exploit-DB 45K+, MITRE ATT&CK 700+, Pentest Reports 10K+."},
+      {"SectionNumber":3,"SectionTitleH2":"Embedded AI Capabilities","SectionNotes":"Classification, Decision Making, Reasoning."}
+    ]
+  },
+  {
+    "PageID": 28, "PageTitle": "SWARM Integration", "PageSlug": "/solutions/swarm/integration",
+    "HeroTitle": "SWARM Integration", "HeroSubtitle": "Native AI at Every Layer", "HeroBadge": "Platform Integration",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Natural Language Workflow","SectionNotes":"4 steps: DESCRIBE, CONTEMPLATE, GENERATE, DEPLOY."},
+      {"SectionNumber":2,"SectionTitleH2":"Industry Applications","SectionNotes":"Financial Services, Healthcare, Government, Manufacturing \u2014 each with 4 specific use cases."},
+      {"SectionNumber":3,"SectionTitleH2":"SWARM vs Legacy Platforms","SectionNotes":"5-row comparison: AI features, layer awareness, integration method, security model, configuration."}
+    ]
+  },
+  {
+    "PageID": 29, "PageTitle": "SWARM Lost Agent Recovery", "PageSlug": "/solutions/swarm/lost-agent-recovery",
+    "HeroTitle": "Lost Agent Recovery", "HeroSubtitle": "No Agent Left Behind", "HeroBadge": "Resilience",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Escalation Levels","SectionNotes":"Level 1 LATE (1\u00d7 interval), Level 2 OVERDUE (2\u00d7), Level 3 MISSING (4\u00d7), Level 4 LOST (8\u00d7 or 24hr)."},
+      {"SectionNumber":2,"SectionTitleH2":"Beacon Types","SectionNotes":"STATUS, FINDINGS, EMERGENCY, INTENT."},
+      {"SectionNumber":3,"SectionTitleH2":"Intent Journal","SectionNotes":"JSON example with position, intended action, reasoning, expected duration, abort conditions, rollback plan, Ed25519 signature."},
+      {"SectionNumber":4,"SectionTitleH2":"Recovery Procedures","SectionNotes":"Firewall Rule Addition, Relay Agent Deployment, Physical Recovery, Alternative Channel Activation, Scheduled Reconnection, Remote Wipe."}
+    ]
+  },
+  {
+    "PageID": 30, "PageTitle": "Aurix PHANTOM", "PageSlug": "/solutions/phantom",
+    "HeroTitle": "Aurix PHANTOM\u2122", "HeroSubtitle": "Parallel Hostile Assessment Network for Threat Operations & Mapping",
+    "StatCards": [{"Value":"847+","Label":"Vulnerability Classes Tested"},{"Value":"24/7","Label":"Continuous Assessment"},{"Value":"100%","Label":"Non-Destructive Testing"},{"Value":"14","Label":"Industries Covered"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Agent Types","SectionNotes":"Scout Agents, Probe Agents, Spawn Coordinators, Boundary Agents."},
+      {"SectionNumber":2,"SectionTitleH2":"Micro-Probe Hardware","SectionNotes":"Standard Probe (GEEKOM), Security Probe (Protectli), WiFi Probe (Beelink+Alfa)."},
+      {"SectionNumber":3,"SectionTitleH2":"Testing Categories","SectionNotes":"6 categories: Network Infrastructure, Wireless, Windows/AD, Linux/Unix, Office Equipment/IoT, Cloud Infrastructure \u2014 each with 7 test items."},
+      {"SectionNumber":4,"SectionTitleH2":"Industry Coverage","SectionNotes":"Financial Services (SWIFT, ATM, PCI-DSS), Healthcare (HL7, DICOM, HIPAA), Critical Infrastructure (SCADA, NERC CIP), Manufacturing (MES, CNC, robotics)."}
+    ]
+  },
+  {
+    "PageID": 31, "PageTitle": "PHANTOM Audit", "PageSlug": "/solutions/lattice/phantom-audit",
+    "HeroTitle": "PHANTOM Audit\u2122", "HeroSubtitle": "AI-Powered Security Audit & Compliance Certification",
+    "StatCards": [{"Value":"98%","Label":"Automated Scanning Coverage"},{"Value":"5\u20137 Days","Label":"Complete Audit Cycle"},{"Value":"740+","Label":"Industry Standards Mapped"},{"Value":"$2.4M","Label":"Avg Audit Cost Savings"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Service Tiers","SectionNotes":"ESSENTIALS ($8,500/3-4 days/automated), PROFESSIONAL ($24,500/5-7 days/human-verified, POPULAR), ENTERPRISE ($68,000/7-10 days/legally attested)."},
+      {"SectionNumber":2,"SectionTitleH2":"The Audit Process","SectionNotes":"Day 1: Engagement Initiation. Day 2: Technical Deep-Dive. Day 3: Penetration Testing. Day 4: Compliance Gap Analysis. Day 5: Findings & Executive Readout."},
+      {"SectionNumber":3,"SectionTitleH2":"Industry Standards","SectionNotes":"Financial (SOX, PCI DSS 4.0, GLBA, FFIEC, NY DFS), Healthcare (HIPAA, HITECH, FDA, HITRUST), Technology (SOC 2, ISO 27001, NIST CSF, CIS, CMMC)."}
+    ]
+  },
+  {
+    "PageID": 32, "PageTitle": "PHANTOM Strike", "PageSlug": "/solutions/lattice/phantom-strike",
+    "HeroTitle": "PHANTOM Strike\u2122", "HeroSubtitle": "Continuous Autonomous Penetration Testing",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Agent Types","SectionNotes":"Scout, Probe, Spawn Coordinators, Boundary Agents with detailed capabilities."},
+      {"SectionNumber":2,"SectionTitleH2":"Coverage Categories","SectionNotes":"Network Infrastructure (Routing/Switching, Firewalls), Wireless (WiFi Protocol, Bluetooth/IoT), and more."}
+    ]
+  },
+  {
+    "PageID": 33, "PageTitle": "PHANTOM Nodes", "PageSlug": "/solutions/phantom/nodes",
+    "HeroTitle": "PHANTOM Nodes\u2122", "HeroSubtitle": "Distributed Linux Scanning Probes for Air-Gapped & Isolated Networks",
+    "StatCards": [{"Value":"1.5M","Label":"Packets Per Second"},{"Value":"~$85","Label":"Per Node Kit"},{"Value":"5,000\u00d7","Label":"Faster Than Windows"},{"Value":"24/7","Label":"Continuous Operation"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"TCP/IP Coverage","SectionNotes":"L4 Application (HTTP/SMTP/DNS), L3 Transport (TCP/UDP 1.5M pps), L2 Internet (IP/ICMP), L1 Network Access (ARP/MAC)."},
+      {"SectionNumber":2,"SectionTitleH2":"Vessel Types","SectionNotes":"SCOUT (Recon, WiFi-only, 3-7 days battery), PHANTOM (Full Stealth, wired, 1.5M pps), RELAY (Mesh, multi-NIC), NEXUS (C2, Pi 4 8GB)."},
+      {"SectionNumber":3,"SectionTitleH2":"Hardware Kit","SectionNotes":"Pi Zero 2W ~$15, 32GB SD ~$8, Case ~$12, USB Hub+Eth ~$25, PSU ~$10 = ~$85 total."}
+    ]
+  },
+  {
+    "PageID": 34, "PageTitle": "PHANTOM Audit Requirements", "PageSlug": "/solutions/phantom/audit-requirements",
+    "HeroTitle": "Industry Audit Requirements", "HeroSubtitle": "Detailed Compliance Frameworks by Industry",
+    "SectionNotes": "8 expandable industry cards with full regulatory detail, remediation scripts, and penalty structures: Healthcare (HIPAA \u00a7164.312, \u00a7164.308), Financial Services (PCI DSS v4.0, SOX Section 404), Government (NIST 800-53, FedRAMP), Defense (CMMC 2.0, DFARS), Energy (NERC CIP, TSA Pipeline), Manufacturing, Retail, Technology."
+  },
+  {
+    "PageID": 35, "PageTitle": "Aurix Lustro", "PageSlug": "/solutions/lustro",
+    "HeroTitle": "Aurix Lustro\u2122", "HeroSubtitle": "Mirror Your Infrastructure. Test Without Risk. \u2014 Digital Twin for Enterprise Security",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Your Infrastructure, Perfectly Reflected","SectionBadge":"Overview"},
+      {"SectionNumber":2,"SectionTitleH2":"Two Core Pillars","SectionNotes":"Component 1: Virtualized Environment (topology replication, air-gap simulation, any TCP/UDP port). Component 2: Infrastructure Data Store (50+ entity types, multi-source normalization)."},
+      {"SectionNumber":3,"SectionTitleH2":"Use Cases","SectionNotes":"Security Teams (training), Pen Testers (safe exploitation), Sales Engineers (demos), Developers (test integrations)."},
+      {"SectionNumber":4,"SectionTitleH2":"Diagram Types","SectionNotes":"Network, Hardware, Identity, Cloud."}
+    ]
+  },
+  {
+    "PageID": 36, "PageTitle": "Lustro Data Model", "PageSlug": "/solutions/lustro/data-model",
+    "HeroTitle": "Infrastructure Data Model", "HeroSubtitle": "50+ Entity Types Across 8 Domain Areas",
+    "StatCards": [{"Value":"50+","Label":"Entity Types"},{"Value":"8","Label":"Domain Areas"},{"Value":"200+","Label":"Relationships"},{"Value":"40+","Label":"Tool Integrations"}],
+    "SectionNotes": "6 domain cards: Network Domain (12 entities: Subnet, VLAN, Firewall, Router...), Hardware Domain (9 entities), Identity Domain (8 entities), Cloud Domain (10 entities), Application Domain (6 entities), Security Domain (7 entities)."
+  },
+  {
+    "PageID": 37, "PageTitle": "Lustro Environment", "PageSlug": "/solutions/lustro/environment",
+    "HeroTitle": "Virtualized Environment", "HeroSubtitle": "Production-Fidelity Infrastructure Mirroring",
+    "StatCards": [{"Value":"100%","Label":"Topology Fidelity"},{"Value":"65535","Label":"Ports Supported"},{"Value":"<5min","Label":"Environment Spin-Up"},{"Value":"0","Label":"Production Risk"}],
+    "SectionNotes": "Core capabilities: Infrastructure Mirroring, Air-Gapped Networks, Any TCP/UDP Port. Use cases: Security Team Training, Penetration Testing, Lattice Demonstrations, Product Development. Probe options: Standard Probe, Security Probe hardware specs."
+  },
+  {
+    "PageID": 38, "PageTitle": "Lustro Interfaces", "PageSlug": "/solutions/lustro/interfaces",
+    "HeroTitle": "Tool Interfaces", "HeroSubtitle": "24+ Security Tool Integrations",
+    "StatCards": [{"Value":"24+","Label":"Tool Integrations"},{"Value":"6","Label":"Categories"},{"Value":"REST","Label":"API Standard"},{"Value":"100%","Label":"Normalized"}],
+    "SectionNotes": "6 categories: Vulnerability Scanners (Tenable, Qualys, CrowdStrike), EDR (CrowdStrike Falcon, Microsoft Defender, SentinelOne, Carbon Black), Asset Management/CMDB (ServiceNow, Axonius, Lansweeper, Snipe-IT), Cloud Platforms (AWS, Azure, GCP, Kubernetes), Identity Providers (AD, Azure AD), Network (Cisco, Palo Alto). Each tool links to /solutions/lustro/interfaces/{slug}."
+  },
+  {
+    "PageID": 39, "PageTitle": "Lustro Integrations", "PageSlug": "/solutions/lustro/integrations",
+    "HeroTitle": "Tool Integrations", "HeroSubtitle": "40+ Security Tool Integrations",
+    "StatCards": [{"Value":"40+","Label":"Tool Integrations"},{"Value":"8","Label":"Categories"},{"Value":"REST","Label":"API Standard"},{"Value":"Real-time","Label":"Data Sync"}],
+    "SectionNotes": "8 categories: Vulnerability Scanners, EDR, Asset Management/CMDB, Cloud Platforms, Identity Providers, Network tools \u2014 with specific products listed."
+  },
+  {
+    "PageID": 40, "PageTitle": "Lustro Interface Detail", "PageSlug": "/solutions/lustro/interfaces/:slug",
+    "SectionNotes": "Dynamic page rendering per-integration detail: Tenable (API endpoints, field mappings), Qualys, CrowdStrike Falcon/Spotlight, Microsoft Defender, SentinelOne, Carbon Black, ServiceNow, Axonius, AWS, Azure, GCP, etc. Each shows: products, base URL, auth method, API version, endpoint table, field mapping table."
+  },
+  {
+    "PageID": 41, "PageTitle": "Self-Healing Technology", "PageSlug": "/solutions/prism/self-healing",
+    "HeroTitle": "Self-Healing Technology", "HeroSubtitle": "Patent-Pending Autonomous Repair with Complete Human Oversight",
+    "StatCards": [{"Value":"92%","Label":"Auto-Resolution Rate"},{"Value":"<5min","Label":"Mean Time to Repair"},{"Value":"100%","Label":"Audit Trail Coverage"},{"Value":"1-Click","Label":"Rollback Capability"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"How It Works","SectionNotes":"4-step process: Detect (AI pattern recognition), Diagnose (root cause + confidence scoring), Remediate (autonomous fixes from playbooks), Verify (post-repair validation + auto-rollback)."},
+      {"SectionNumber":2,"SectionTitleH2":"Six Validation Layers","SectionNotes":"Syntax, Semantic, Security Scanning, Performance Analysis, Compliance Checking, Scalability Testing."},
+      {"SectionNumber":3,"SectionTitleH2":"Performance Metrics","SectionNotes":"Auto-Heal Success >95%, Mean Time to Heal <2min, Validation Accuracy 98%, Human Escalation <5%."}
+    ]
+  },
+  {
+    "PageID": 42, "PageTitle": "Digital Twin & Lineage", "PageSlug": "/solutions/prism/digital-twin",
+    "HeroTitle": "Digital Twin & Lineage", "HeroSubtitle": "A living, real-time replica of your entire data estate", "HeroBadge": "Aurix Prism\u2122",
+    "StatCards": [{"Value":"100%","Label":"Data Lineage Coverage"},{"Value":"Real-time","Label":"Twin Sync Latency"},{"Value":"97%","Label":"Impact Prediction Accuracy"},{"Value":"15min","Label":"Avg Root Cause ID"}],
+    "SectionNotes": "6 capabilities: Live Data Lineage Graph, What-If Simulation, Impact Analysis, Version History & Diff, Schema Change Detection, Automated Documentation. Flight simulator analogy for data."
+  },
+  {
+    "PageID": 43, "PageTitle": "PrismGPT", "PageSlug": "/solutions/prism/prismgpt",
+    "HeroTitle": "PrismGPT", "HeroSubtitle": "Natural language interface for your entire data estate", "HeroBadge": "Aurix Prism\u2122",
+    "StatCards": [{"Value":"40+","Label":"Languages Supported"},{"Value":"<2s","Label":"Query Response Time"},{"Value":"99.4%","Label":"Intent Accuracy"},{"Value":"Zero","Label":"SQL Required"}],
+    "SectionNotes": "6 features: Natural Language Queries, Automated Report Generation, 40+ Language Support, Data Pipeline Orchestration, Documentation Generation, Conversational Data Exploration. Example queries included."
+  },
+  {
+    "PageID": 44, "PageTitle": "PEN \u2014 Pipeline Engineering Network", "PageSlug": "/solutions/prism/pen",
+    "HeroTitle": "PEN\u2122", "HeroSubtitle": "Pipeline Engineering Network \u2014 Data Integration, Transformation & Orchestration",
+    "StatCards": [{"Value":"200+","Label":"Pre-Built Connectors"},{"Value":"80%","Label":"Faster Development"},{"Value":"99.9%","Label":"Pipeline Uptime"},{"Value":"60%","Label":"Cost Reduction"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Pipeline Features","SectionNotes":"Drag-and-Drop Canvas (infinite zoom, real-time collab, version control), AI-Assisted Development (NL generation, auto schema mapping), Code When You Need It (SQL/Python/Spark/dbt)."},
+      {"SectionNumber":2,"SectionTitleH2":"Self-Healing","SectionNotes":"Schema evolution, Data repair via Prism, Error recovery, Dead letter queues."},
+      {"SectionNumber":3,"SectionTitleH2":"Data Mashup Sources","SectionNotes":"Compliance & Regulatory (OFAC, UN/EU Sanctions, PEP, SEC EDGAR, OIG, FDA NDC), Identity Verification (Experian, Equifax, TransUnion, USPS, D&B, GLEIF), Market Intelligence (Bloomberg, Refinitiv, FRED, BLS, World Bank, Satellite Data)."}
+    ]
+  },
+  {
+    "PageID": 45, "PageTitle": "Clarity\u2122", "PageSlug": "/solutions/sentinel/clarity",
+    "HeroTitle": "Clarity\u2122", "HeroSubtitle": "AI Decision Transparency Engine \u2014 Patent Pending",
+    "StatCards": [{"Value":"100%","Label":"Decision Traceability"},{"Value":"<50ms","Label":"Explanation Latency"},{"Value":"15+","Label":"Regulatory Frameworks"},{"Value":"Zero","Label":"Black Box Decisions"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Trust Spectrum","SectionNotes":"Black Box AI \u2192 Interpretable AI \u2192 Explainable AI \u2192 Clarity\u2122-Powered AI."},
+      {"SectionNumber":2,"SectionTitleH2":"Four Architecture Layers","SectionNotes":"1. Input Capture & Contextualization, 2. Reasoning Chain Extraction (SHAP/LIME/attention/decision tree), 3. Natural Language Translation (4 audience levels), 4. Immutable Audit Trail (SHA-256, 7yr retention, JSON/PDF/XBRL)."},
+      {"SectionNumber":3,"SectionTitleH2":"Explanation Types","SectionNotes":"Executive Summary, Business Explanation, Technical Trace, Regulatory Format."},
+      {"SectionNumber":4,"SectionTitleH2":"Use Cases","SectionNotes":"Credit Decisioning (78% reduction in explanation time), Clinical Decision Support (100% physician confidence), Security Alert Triage (65% faster), Data Quality Remediation (100% audit pass rate)."},
+      {"SectionNumber":5,"SectionTitleH2":"Regulatory Coverage","SectionNotes":"EU AI Act, NIST AI RMF, ECOA/FCRA, FDA AI/ML, SEC AI Guidance, ISO/IEC 42001."},
+      {"SectionNumber":6,"SectionTitleH2":"Technical Specs","SectionNotes":"<50ms latency, 10K exp/sec throughput, 7yr retention, JSON/PDF/XBRL export, SHA-256 signing, AES-256 encryption, REST+GraphQL API, Python/Java/.NET SDKs."}
+    ]
+  },
+  {
+    "PageID": 46, "PageTitle": "AgenticMind", "PageSlug": "/solutions/agentic-mind",
+    "HeroTitle": "AgenticMind\u2122", "HeroSubtitle": "The No-Boundaries Agentic Framework \u2014 Build, Connect, and Govern AI Agents Without Code",
+    "StatCards": [{"Value":"1,015+","Label":"Pre-Built Components"},{"Value":"<5 min","Label":"Time to Deploy"},{"Value":"100%","Label":"Governed Agents"},{"Value":"\u221e","Label":"Scalability"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Component Library","SectionNotes":"6 categories: Text & Language, Data Processing, Framework Integrations, AI Models, Agentic Workflows, Intelligence & Cost \u2014 each with 5 items."},
+      {"SectionNumber":2,"SectionTitleH2":"Governance Features","SectionNotes":"Automatic Governance, Clarity\u2122 Integration, IT Oversight Console."},
+      {"SectionNumber":3,"SectionTitleH2":"Self-Healing & Autonomy","SectionNotes":"Self-Healing Components, Self-Optimising Agents, Composite Agent Graphs, Autonomous Workflows."},
+      {"SectionNumber":4,"SectionTitleH2":"Framework Integrations","SectionNotes":"LangChain (Full Parity), AutoGen (Managed Sync), CrewAI (Agent Handoff), Semantic Kernel (Gateway), OpenAI (Native), Anthropic (Direct API), Google Gemini (Multi-modal), Mistral/Llama (On-Prem), SWARM Network (Native Bridge), A2A Protocol (Standards Support)."}
+    ]
+  },
+  {
+    "PageID": 47, "PageTitle": "Hallucination Mitigation", "PageSlug": "/solutions/hallucination-mitigation",
+    "HeroTitle": "AI Hallucination Mitigation", "HeroSubtitle": "Patent-Pending Parallel Sentinel Architecture for Real-Time Detection",
+    "StatCards": [{"Value":"99.7%","Label":"Detection Accuracy"},{"Value":"<50ms","Label":"Detection Latency"},{"Value":"0.003%","Label":"False Positive Rate"},{"Value":"100%","Label":"Automated Recovery"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Hallucination Types","SectionNotes":"Intrinsic, Extrinsic, Logical, Temporal."},
+      {"SectionNumber":2,"SectionTitleH2":"Root Causes","SectionNotes":"Attention Mechanism Limitations, Training Data Artifacts, Knowledge Cutoff & Temporal Drift, RLHF Artifacts, Autoregressive Cascade."},
+      {"SectionNumber":3,"SectionTitleH2":"Architecture","SectionNotes":"6 components: Parallel Session Binding, Logical Invariant Test Battery, Real-Time Coherence Scoring, Semantic Anchor Validation, Reasoning Chain Decomposition, Contradiction Loop Testing."},
+      {"SectionNumber":4,"SectionTitleH2":"Recovery Levels","SectionNotes":"Level 1 Enhanced Monitoring (85-95%), Level 2 Output Quarantine (70-85%), Level 3 Session Reset (50-70%), Level 4 Workflow Rollback (<50%)."}
+    ]
+  }
+]

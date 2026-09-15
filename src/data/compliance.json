@@ -1,0 +1,191 @@
+[
+  {
+    "slug": "basel-iii",
+    "title": "Basel III / IV",
+    "full_name": "Basel Committee on Banking Supervision Capital Requirements",
+    "audit_frequency": "Quarterly / Annual",
+    "penalties": "Capital add-ons; distribution restrictions",
+    "content": "Basel III establishes global standards for bank capital adequacy, stress testing, liquidity risk management, and the data aggregation principles of BCBS 239 that underpin regulatory reporting.",
+    "affected_industries": ["financial-services"]
+  },
+  {
+    "slug": "sox",
+    "title": "SOX",
+    "full_name": "Sarbanes-Oxley Act of 2002",
+    "audit_frequency": "Annual (Section 404); Quarterly (Section 302)",
+    "penalties": "Up to $5M and 20 years imprisonment for executives",
+    "content": "The Sarbanes-Oxley Act mandates strict reforms to improve financial disclosures, requiring executives to personally certify the accuracy of financial statements and internal controls over financial reporting.",
+    "affected_industries": ["financial-services", "technology", "manufacturing", "retail"]
+  },
+  {
+    "slug": "pci-dss",
+    "title": "PCI DSS",
+    "full_name": "Payment Card Industry Data Security Standard v4.0",
+    "audit_frequency": "Annual QSA / Quarterly Scans",
+    "penalties": "$5,000–$100,000/month; loss of card acceptance",
+    "content": "PCI DSS v4.0 is the security standard for all organizations that store, process, or transmit cardholder data — with enhanced requirements for web skimming prevention, customized implementation, and continuous compliance.",
+    "affected_industries": ["financial-services", "retail", "technology", "healthcare"]
+  },
+  {
+    "slug": "gdpr",
+    "title": "GDPR",
+    "full_name": "General Data Protection Regulation",
+    "audit_frequency": "Ongoing (complaint / own-initiative)",
+    "penalties": "€20M or 4% of global annual turnover",
+    "content": "The GDPR is the world's most consequential data privacy regulation, applying extraterritorially to any organization processing EU residents' personal data, with rights to erasure, portability, and algorithmic transparency.",
+    "affected_industries": ["financial-services", "healthcare", "retail", "manufacturing", "technology", "government", "insurance", "legal-professional-services", "telecommunications", "media-entertainment"]
+  },
+  {
+    "slug": "glba",
+    "title": "GLBA",
+    "full_name": "Gramm-Leach-Bliley Act",
+    "audit_frequency": "FTC / Banking regulator examination cycles",
+    "penalties": "Up to $51,744 per violation per day",
+    "content": "GLBA requires financial institutions to safeguard customer nonpublic personal information with a comprehensive written security program, with the 2023 Safeguards Rule update adding specific technical requirements including MFA, encryption, and continuous monitoring.",
+    "affected_industries": ["financial-services", "insurance"]
+  },
+  {
+    "slug": "hipaa",
+    "title": "HIPAA",
+    "full_name": "Health Insurance Portability and Accountability Act",
+    "audit_frequency": "Periodic / Incident-based OCR investigation",
+    "penalties": "$100–$50,000 per violation; up to $1.9M/category/year",
+    "content": "HIPAA establishes administrative, physical, and technical safeguards for protected health information, with the HITECH Act and Omnibus Rule expanding business associate liability and creating the breach notification framework.",
+    "affected_industries": ["healthcare", "government", "insurance"]
+  },
+  {
+    "slug": "hitech",
+    "title": "HITECH",
+    "full_name": "Health Information Technology for Economic and Clinical Health Act",
+    "audit_frequency": "Periodic",
+    "penalties": "Up to $1.9M per violation category per year",
+    "content": "HITECH strengthened HIPAA enforcement with tiered civil monetary penalties, extended direct liability to business associates, and established the 60-day breach notification requirement that governs healthcare data breach response.",
+    "affected_industries": ["healthcare"]
+  },
+  {
+    "slug": "ccpa",
+    "title": "CCPA / CPRA",
+    "full_name": "California Consumer Privacy Act / Privacy Rights Act",
+    "audit_frequency": "CPPA complaint-driven; annual cybersecurity audits for high-risk processing",
+    "penalties": "$2,500–$7,500 per violation; $750 per consumer per data breach",
+    "content": "CCPA/CPRA grants California consumers comprehensive rights over personal information collection, use, and sale, with the CPRA creating the California Privacy Protection Agency as an independent enforcement authority and adding new Sensitive Personal Information protections.",
+    "affected_industries": ["retail", "technology", "financial-services", "healthcare", "insurance", "telecommunications", "media-entertainment"]
+  },
+  {
+    "slug": "iso-27001",
+    "title": "ISO 27001",
+    "full_name": "ISO/IEC 27001:2022",
+    "audit_frequency": "Annual surveillance; triennial recertification",
+    "penalties": "Certification suspension/withdrawal",
+    "content": "ISO 27001:2022 is the world's most widely adopted information security management system standard, requiring organizations to establish a risk-based ISMS with 93 controls across organizational, people, physical, and technological themes.",
+    "affected_industries": ["manufacturing", "technology", "energy", "legal-professional-services", "transportation-logistics", "pharmaceutical-biotech"]
+  },
+  {
+    "slug": "nist",
+    "title": "NIST CSF",
+    "full_name": "NIST Cybersecurity Framework",
+    "audit_frequency": "Self-Assessment / Referenced in federal requirements",
+    "penalties": "None (Voluntary)",
+    "content": "The NIST Cybersecurity Framework provides a risk-based approach to cybersecurity organized around six core functions: Govern, Identify, Protect, Detect, Respond, and Recover — the most widely adopted cybersecurity management framework globally.",
+    "affected_industries": ["manufacturing", "energy", "government", "defense", "education", "telecommunications", "transportation-logistics", "pharmaceutical-biotech"]
+  },
+  {
+    "slug": "soc2",
+    "title": "SOC 2",
+    "full_name": "Service Organization Control 2",
+    "audit_frequency": "Annual Type II (12-month observation period)",
+    "penalties": "Loss of certification; commercial consequences",
+    "content": "SOC 2 Type II is the de facto security certification for cloud service providers and SaaS companies, assessing the design and operating effectiveness of controls across the Trust Services Criteria: Security, Availability, Processing Integrity, Confidentiality, and Privacy.",
+    "affected_industries": ["technology", "financial-services", "healthcare"]
+  },
+  {
+    "slug": "nerc-cip",
+    "title": "NERC CIP",
+    "full_name": "North American Electric Reliability Corporation Critical Infrastructure Protection",
+    "audit_frequency": "Periodic Regional Entity audits (typically every 3 years)",
+    "penalties": "Up to $1,000,000 per violation per day",
+    "content": "NERC CIP standards are mandatory enforceable requirements for bulk electric system operators, covering cybersecurity across 12 standards from categorization through supply chain risk management — with penalties that make compliance failure existential.",
+    "affected_industries": ["energy"]
+  },
+  {
+    "slug": "fedramp",
+    "title": "FedRAMP",
+    "full_name": "Federal Risk and Authorization Management Program",
+    "audit_frequency": "Annual 3PAO assessment; monthly ConMon deliverables",
+    "penalties": "Revocation of authorization; removal from FedRAMP Marketplace",
+    "content": "FedRAMP provides a standardized 'do once, use many' approach to cloud security authorization for federal agencies, with tiered baselines (Low/Moderate/High) and continuous monitoring requirements that enable reuse of cloud service authorizations across the federal enterprise.",
+    "affected_industries": ["government", "defense", "technology"]
+  },
+  {
+    "slug": "fisma",
+    "title": "FISMA",
+    "full_name": "Federal Information Security Modernization Act",
+    "audit_frequency": "Annual FISMA reporting; continuous monitoring; 3-year ATO cycle",
+    "penalties": "Budget consequences; ATO revocation; contractor debarment",
+    "content": "FISMA requires federal agencies and their contractors to implement information security programs consistent with NIST SP 800-53, operationalized through the Risk Management Framework's categorize-select-implement-assess-authorize-monitor lifecycle.",
+    "affected_industries": ["government", "defense", "technology"]
+  },
+  {
+    "slug": "cmmc",
+    "title": "CMMC 2.0",
+    "full_name": "Cybersecurity Maturity Model Certification",
+    "audit_frequency": "Triennial C3PAO assessment (Level 2+); annual self-assessment (Level 1)",
+    "penalties": "Contract ineligibility; False Claims Act treble damages; debarment",
+    "content": "CMMC 2.0 introduces mandatory third-party certification for DoD contractors handling Controlled Unclassified Information, building on NIST SP 800-171's 110 practices with the addition of independent C3PAO assessment requirements that took effect in 2025.",
+    "affected_industries": ["defense", "manufacturing", "technology"]
+  },
+  {
+    "slug": "dora",
+    "title": "DORA",
+    "full_name": "Digital Operational Resilience Act (EU)",
+    "audit_frequency": "Ongoing NCA supervision; TLPT every 3 years; annual ICT risk assessment",
+    "penalties": "Up to 2% of total annual worldwide turnover; €5M for critical ICT providers",
+    "content": "DORA establishes a comprehensive ICT risk management, incident reporting, resilience testing, and third-party oversight framework for EU financial entities and their critical technology service providers — in force from January 17, 2025.",
+    "affected_industries": ["financial-services", "insurance", "technology"]
+  },
+  {
+    "slug": "ferpa",
+    "title": "FERPA",
+    "full_name": "Family Educational Rights and Privacy Act",
+    "audit_frequency": "Complaint-driven Department of Education investigation",
+    "penalties": "Loss of all federal funding (rarely exercised); corrective action",
+    "content": "FERPA protects the privacy of student education records at all federally-funded educational institutions, granting parents and eligible students rights to access, correct, and control disclosure of education records — including AI-generated assessments and learning analytics data.",
+    "affected_industries": ["education", "technology", "government"]
+  },
+  {
+    "slug": "hitrust",
+    "title": "HITRUST CSF",
+    "full_name": "HITRUST Common Security Framework",
+    "audit_frequency": "Annual (e1/i1); biennial r2 with annual interim assessment",
+    "penalties": "Certification withdrawal; commercial contract consequences",
+    "content": "HITRUST CSF harmonizes HIPAA, NIST, ISO 27001, PCI-DSS, and state regulations into a single certifiable framework — making it the de facto security certification for healthcare organizations and their business associates handling protected health information.",
+    "affected_industries": ["healthcare", "technology", "insurance"]
+  },
+  {
+    "slug": "eu-ai-act",
+    "title": "EU AI Act",
+    "full_name": "European Union Artificial Intelligence Act",
+    "audit_frequency": "Pre-market conformity assessment; post-market monitoring ongoing",
+    "penalties": "€35M or 7% of global turnover for prohibited AI; €15M or 3% for high-risk violations",
+    "content": "The EU AI Act is the world's first comprehensive AI regulation, using a risk-based classification (Prohibited / High-Risk / Limited-Risk / Minimal-Risk) to impose transparency, documentation, human oversight, and conformity assessment requirements on AI systems placed on the EU market.",
+    "affected_industries": ["technology", "financial-services", "healthcare", "government", "insurance", "retail", "transportation-logistics", "manufacturing", "media-entertainment"]
+  },
+  {
+    "slug": "nist-800-53",
+    "title": "NIST SP 800-53",
+    "full_name": "NIST Special Publication 800-53 Rev. 5",
+    "audit_frequency": "Continuous monitoring; formal assessments on 3-year ATO cycle",
+    "penalties": "Loss of ATO; budget consequences; contractor debarment",
+    "content": "NIST SP 800-53 Rev. 5 is the comprehensive federal security and privacy control catalog with 20 control families, integrated privacy controls, and AI governance requirements — the foundational reference for FISMA, FedRAMP, and CMMC compliance programs.",
+    "affected_industries": ["government", "defense", "financial-services", "healthcare", "technology"]
+  },
+  {
+    "slug": "mifid-ii",
+    "title": "MiFID II",
+    "full_name": "Markets in Financial Instruments Directive II / MiFIR",
+    "audit_frequency": "Ongoing NCA supervision; annual best execution reporting",
+    "penalties": "Up to €5M or 10% of annual turnover; withdrawal of authorization",
+    "content": "MiFID II governs investment services across the EEA with specific requirements for transaction reporting accuracy, algorithmic trading governance, best execution documentation, and investor protection — creating direct data quality and AI governance obligations for investment firms.",
+    "affected_industries": ["financial-services", "technology"]
+  }
+]

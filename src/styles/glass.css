@@ -1,0 +1,188 @@
+/* ============================================================
+   Aurix Glassmorphic Design System — Centralized Styles
+   ============================================================
+   Single source of truth for all glass panel, card, shine,
+   glow, and loading screen styles. Edit here to update everywhere.
+   ============================================================ */
+
+/* --- Global horizontal overflow prevention --- */
+html, body {
+  overflow-x: clip;
+}
+
+/* --- Page background behind the glass panel --- */
+.glass-page-bg {
+  min-height: 100vh;
+  background-color: rgb(148, 163, 184); /* slate-400 — slightly lighter than old slate-500 */
+  padding: 0;
+  overflow-x: clip;                /* prevent any horizontal scrollbar at the page level */
+}
+@media (min-width: 768px) {
+  .glass-page-bg {
+    padding: 3rem;
+  }
+}
+
+/* --- Main floating glass panel --- */
+.glass-panel {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0;
+  overflow-x: clip;              /* x-axis only — hides horizontal scrollbar without breaking position:sticky on Navbar */
+  min-height: 100vh;
+  max-width: 1600px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(18px) saturate(1.3);
+  -webkit-backdrop-filter: blur(18px) saturate(1.3);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 0 0 2px rgba(255, 255, 255, 0.02),
+    0 28px 90px -12px rgba(0, 0, 0, 0.87),
+    0 0 140px -25px rgba(14, 165, 233, 0.10),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+}
+@media (min-width: 768px) {
+  .glass-panel {
+    border-radius: 1rem;
+    clip-path: inset(0 round 1rem); /* clips rounded corners visually without creating an overflow context — position:sticky works */
+    min-height: calc(100vh - 4rem);
+  }
+}
+
+/* --- Edge shine accents (top, left, right) --- */
+.glass-shine-top {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  z-index: 50;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.20), transparent);
+}
+.glass-shine-left {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 0;
+  width: 1px;
+  z-index: 50;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+}
+.glass-shine-right {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: 0;
+  width: 1px;
+  z-index: 50;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+}
+
+/* --- Loading screen --- */
+.glass-loading-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 500ms;
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(56, 189, 248, 0.08) 0%, rgba(71, 85, 105, 0.0) 60%),
+    rgb(148, 163, 184); /* matches glass-page-bg */
+}
+.glass-loading-backdrop.fade-out {
+  opacity: 0;
+}
+
+.glass-loading-glow {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 9999px;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+  filter: blur(40px);
+}
+
+.glass-loading-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem 3rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 24px 80px -12px rgba(0, 0, 0, 0.5),
+    0 0 100px -20px rgba(14, 165, 233, 0.12),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
+}
+
+.glass-loading-card-shine {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.glass-loading-spinner-glow {
+  position: absolute;
+  inset: -8px;
+  border-radius: 9999px;
+  background: conic-gradient(from 0deg, rgba(14, 165, 233, 0.0), rgba(14, 165, 233, 0.15), rgba(14, 165, 233, 0.0));
+  animation: glass-spin 3s linear infinite;
+  filter: blur(6px);
+}
+
+.glass-loading-percent {
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 0 12px rgba(14, 165, 233, 0.3);
+}
+
+.glass-loading-brand {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 20px rgba(14, 165, 233, 0.2);
+}
+
+.glass-loading-brand-accent {
+  color: rgba(56, 189, 248, 0.95);
+}
+
+.glass-loading-subtitle {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* --- Footer glassmorphic variant --- */
+.glass-footer {
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  background: linear-gradient(180deg, rgba(241, 245, 249, 0.95) 0%, rgba(248, 250, 252, 0.97) 100%);
+}
+.glass-footer-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 5%, rgba(255, 255, 255, 0.6) 50%, transparent 95%);
+}
+
+/* --- Keyframes --- */
+@keyframes glass-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

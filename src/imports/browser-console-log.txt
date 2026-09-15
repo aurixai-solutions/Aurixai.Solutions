@@ -1,0 +1,93 @@
+chrome-extension://invalid/:1  Failed to load resource: net::ERR_FAILED
+chrome-extension://invalid/:1  Failed to load resource: net::ERR_FAILED
+chrome-extension://invalid/:1  Failed to load resource: net::ERR_FAILED
+chrome-extension://invalid/:1  Failed to load resource: net::ERR_FAILED
+chrome-extension://invalid/:1  Failed to load resource: net::ERR_FAILED
+chrome-extension://invalid/:1  Failed to load resource: net::ERR_FAILED
+chrome-extension://invalid/:1  Failed to load resource: net::ERR_FAILED
+contentScript.js:2 Content script initialized successfully.
+ Running frontend commit 95e947558cd27c271970bc10b9e66d17b7a8e9ee
+installHook.js:1 Statsig is not ready to log exposures, will retry in 1 seconds
+overrideMethod @ installHook.js:1
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [import] git: a2a350dc3ff78fa927f312c35bcde329e6807ef9, stamp: 30EEFE145ED4B2DC
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 cently:ss: site script injected
+8462-68ac81de5a2b868a.min.js.br:sourcemap:358 The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127
+initialize @ 8462-68ac81de5a2b868a.min.js.br:sourcemap:358
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 Autosave Changes not available or already claimed by another tab undefined
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 Loaded 32 scripts (5972767b), 7 from cache (131674b)
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [Fullscreen] Booting... (emscripten version 4.0.21)
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [GPU] graphicsAPI:"WebGL 2", vendor:"Google Inc. (Intel)", renderer:"ANGLE (Intel, Intel(R) Arc(TM) Pro 140T GPU (16GB) (0x00007D51) Direct3D11 vs_5_0 ps_5_0, D3D11)" version:"OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))"
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [Fullscreen] Ready in 994.3ms
+8462-68ac81de5a2b868a.min.js.br:sourcemap:358 The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127
+initialize @ 8462-68ac81de5a2b868a.min.js.br:sourcemap:358
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [FullscreenApp] calling setEditorTheme and setting preference dark
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/e07zSSnNxwEKWXngGX52wa?role=editor&tracking_session_id=lPI5eaSy6qytZyUS&version=151&recentReload=0&file-load-streaming-compression&user-id=1362179271987434888&client_release=95e947558cd27c271970bc10b9e66d17b7a8e9ee
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [FullscreenApp] calling setEditorTheme and setting preference dark
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [Sprigma] Sprig SDK is ready
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [MultiplayerSession] Joining file version 106 (initial load)
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 Migration succeeded: context: fullscreen_migrate_SceneGraphManager, version: 106, duration: 0ms.
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: <URL>
+/api/make/fetch_ds_code_gen_status:1  Failed to load resource: the server responded with a status of 400 ()
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [devtools] Initialized LS
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [devtools] Initialized LS
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [Fullscreen] loadtime=5.42s maxmem=171816596
+installHook.js:1 Too many elapsed hits of react since last report
+overrideMethod @ installHook.js:1
+Aurix-AI-Solutions?p=f&t=kjBGmZVBsJQ8wCJd-0:1 Loading the stylesheet 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css' violates the following Content Security Policy directive: "style-src 'self' 'unsafe-inline' https://www.figma.com/webpack-artifacts/ https://fonts.googleapis.com/ https://accounts.google.com/gsi/style https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css". Note that 'style-src-elem' was not explicitly set, so 'style-src' is used as a fallback. The action has been blocked.
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+o22594.ingest.us.sentry.io/api/56203/envelope/?sentry_key=333f664af67c57ab0ed581c89de74387&sentry_version=7&sentry_client=sentry.javascript.react%2F8.40.0:1  Failed to load resource: the server responded with a status of 429 ()
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [devtools] Initialized LS
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [devtools] Initialized LS
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [devtools] Initialized LS
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [devtools] Initialized LS
+vendor-core-ade2edecaf4781c7.min.js.br:sourcemap:54 [devtools] Initialized LS
+code_components_preview_iframe-a2dfb1811c456f43.min.js.br:sourcemap:28 [App.tsx] App component rendering
+code_components_preview_iframe-a2dfb1811c456f43.min.js.br:sourcemap:28 [Root] pathname: / isAdmin: false hash: 
+code_components_preview_iframe-a2dfb1811c456f43.min.js.br:sourcemap:28 [PasswordGate] API password_protection.enabled: false
+dealfinder.retailmenot.com/api/v2/featureflags/proxy?sessionId=942404442&appName=dealfinder-experience&environment=default&properties%5BisNewUser%5D=false&properties%5BinstallUuid%5D=355VJTS57NCWLPKYPSXNZSCPGQ&properties%5BextensionVersion%5D=4.21.3&properties%5BexperienceVersion%5D=20260304120724-31d1661c:1  Failed to load resource: net::ERR_CONNECTION_CLOSED
+main.esm.js:1 Unleash: unable to fetch feature toggles TypeError: Failed to fetch
+    at t.<anonymous> (main.esm.js:1:19157)
+    at main.esm.js:1:1681
+    at Object.next (main.esm.js:1:976)
+    at main.esm.js:1:702
+    at new Promise (<anonymous>)
+    at cw (main.esm.js:1:447)
+    at t.fetchToggles (main.esm.js:1:18347)
+    at main.esm.js:1:15678
+(anonymous) @ main.esm.js:1
+s3-figma-force-client-reloads-production.figma.com/periodic_refresh.json:1  Failed to load resource: net::ERR_TIMED_OUT
+code_components_preview_iframe-a2dfb1811c456f43.min.js.br:sourcemap:28 [App.tsx] App component rendering
+code_components_preview_iframe-a2dfb1811c456f43.min.js.br:sourcemap:28 [Root] pathname: / isAdmin: false hash: 
+api.sprig.com/sdk/1/visitors/1cefac2d-1eee-4005-a797-f18edfdc69f6/events:1  Failed to load resource: net::ERR_TIMED_OUT
+@react-refresh:1  Failed to load resource: net::ERR_CONNECTION_CLOSED

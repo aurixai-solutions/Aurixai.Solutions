@@ -1,0 +1,29 @@
+{
+  "site_settings": {
+    "password_protection": {
+      "enabled": false
+    }
+  },
+  "pages": {
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch with our team."
+    }
+  },
+  "executive_team": [],
+  "services": [],
+  "taglines": [
+    { "id": "default", "text": "Transmute Noise Into Sovereignty", "duration": 5000 }
+  ],
+  "waveBoltDuration": 3800,
+  "home_slideshow": {
+    "images": []
+  },
+  "hero_configs": {},
+  "announcement": {
+    "content": ""
+  },
+  "competitors_analysis": {
+    "hasCustomAnalysis": false
+  }
+}

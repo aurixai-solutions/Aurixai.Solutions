@@ -1,0 +1,130 @@
+[
+  {
+    "slug": "financial-services",
+    "title": "Financial Services",
+    "hero_image": "https://images.unsplash.com/photo-1764423023533-9bd6bd817ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBiYW5rJTIwaGVhZHF1YXJ0ZXJzJTIwZmluYW5jaWFsJTIwZGlzdHJpY3QlMjBnbGFzcyUyMHRvd2VyfGVufDF8fHx8MTc3MTUyOTQ2Mnww&ixlib=rb-4.1.0&q=80&w=1200",
+    "description": "Secure, compliant, and real-time financial intelligence.",
+    "content_overview": "Aurix AI enables financial institutions to modernize legacy systems while ensuring strict adherence to global regulatory standards. From fraud detection to capital adequacy modeling, our platforms provide the security and transparency required by the world's leading banks.",
+    "regulations": ["basel-iii", "sox", "pci-dss", "gdpr", "glba", "dora", "mifid-ii"]
+  },
+  {
+    "slug": "healthcare",
+    "title": "Healthcare",
+    "hero_image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200",
+    "description": "Patient-centric data governance and privacy protection.",
+    "content_overview": "In an era of digital health, protecting patient data is paramount. Aurix AI provides HIPAA-compliant infrastructure that accelerates medical research and improves patient outcomes through predictive analytics and secure data sharing.",
+    "regulations": ["hipaa", "hitech", "gdpr", "hitrust"]
+  },
+  {
+    "slug": "retail",
+    "title": "Retail & E-Commerce",
+    "hero_image": "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?w=1200",
+    "description": "Consumer trust through transparent data handling.",
+    "content_overview": "Retailers must balance personalization with privacy. Aurix AI helps brands build trust by ensuring that customer data is handled with transparency and security, complying with evolving consumer protection laws.",
+    "regulations": ["ccpa", "gdpr", "pci-dss"]
+  },
+  {
+    "slug": "manufacturing",
+    "title": "Manufacturing",
+    "hero_image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200",
+    "description": "Securing the industrial internet of things (IIoT).",
+    "content_overview": "Modern manufacturing relies on connected devices. Aurix AI secures the supply chain and production lines, ensuring operational continuity and compliance with industry safety and quality standards.",
+    "regulations": ["iso-27001", "nist", "gdpr", "cmmc"]
+  },
+  {
+    "slug": "technology",
+    "title": "Technology & SaaS",
+    "hero_image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200",
+    "description": "Scalable compliance for high-growth tech companies.",
+    "content_overview": "Tech companies face rapid regulatory changes. Aurix AI provides a flexible compliance framework that scales with your growth, automating evidence collection and audit readiness.",
+    "regulations": ["soc2", "iso-27001", "gdpr", "ccpa", "eu-ai-act"]
+  },
+  {
+    "slug": "energy",
+    "title": "Energy & Utilities",
+    "hero_image": "https://images.unsplash.com/photo-1563224699-838b293e0af5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvZmZzaG9yZSUyMHdpbmQlMjBmYXJtJTIwdHVyYmluZXMlMjBvY2VhbiUyMGFlcmlhbHxlbnwxfHx8fDE3NzE1Mjk0NjJ8MA&ixlib=rb-4.1.0&q=80&w=1200",
+    "description": "Critical infrastructure protection and reliability.",
+    "content_overview": "Energy providers manage critical national infrastructure. Aurix AI delivers robust cybersecurity and operational monitoring to prevent disruptions and ensure compliance with federal energy regulations.",
+    "regulations": ["nerc-cip", "nist", "iso-27001"]
+  },
+  {
+    "slug": "government",
+    "title": "Government & Public Sector",
+    "hero_image": "https://images.unsplash.com/photo-1520697830682-bbb6e85e2b0b?w=1200",
+    "description": "Sovereign data security and citizen privacy.",
+    "content_overview": "Government agencies require the highest levels of data security. Aurix AI offers FedRAMP-ready solutions that protect sensitive citizen data while enabling efficient digital services.",
+    "regulations": ["fedramp", "fisma", "nist", "nist-800-53", "gdpr"]
+  },
+  {
+    "slug": "defense",
+    "title": "Defense & Intelligence",
+    "hero_image": "https://images.unsplash.com/photo-1763924121223-9152f8ebccb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWZlbnNlJTIwbWlsaXRhcnklMjBpbnRlbGxpZ2VuY2UlMjBjeWJlciUyMG9wZXJhdGlvbnMlMjBjZW50ZXJ8ZW58MXx8fHwxNzcxNTI5NDYzfDA&ixlib=rb-4.1.0&q=80&w=1200",
+    "description": "Nation-state-grade protection for defense contractors and the intelligence community.",
+    "content_overview": "Defense contractors and cleared facilities operate in the most hostile threat environment of any industry, facing systematic nation-state targeting and binding CMMC certification requirements. Aurix AI delivers the persistent access detection, CUI data governance, and DoD Responsible AI documentation that modern defense compliance demands.",
+    "regulations": ["cmmc", "fisma", "nist", "nist-800-53"]
+  },
+  {
+    "slug": "education",
+    "title": "Education & Higher Education",
+    "hero_image": "https://images.unsplash.com/photo-1763328446274-c5ae7c07d403?w=1200",
+    "description": "Protecting student records, research IP, and institutional data across distributed academic environments.",
+    "content_overview": "Educational institutions manage sensitive student records, financial aid data, and research IP across distributed environments. Aurix AI provides FERPA-compliant governance, ransomware-resilient monitoring, and AI transparency for the learning technologies reshaping education.",
+    "regulations": ["ferpa", "pci-dss", "nist"]
+  },
+  {
+    "slug": "insurance",
+    "title": "Insurance",
+    "hero_image": "https://images.unsplash.com/photo-1768839722505-48dbf983da27?w=1200",
+    "description": "Governing sensitive personal data and AI-driven decisions in the insurance sector.",
+    "content_overview": "Insurance organizations process health diagnoses, driving records, and financial data while operating AI-driven underwriting and claims systems under intense state regulatory scrutiny. Aurix AI provides the data governance and algorithmic accountability infrastructure that carriers require.",
+    "regulations": ["glba", "hipaa", "ccpa", "gdpr", "dora"]
+  },
+  {
+    "slug": "legal-professional-services",
+    "title": "Legal & Professional Services",
+    "hero_image": "https://images.unsplash.com/photo-1528747008803-f9f5cc8f1a64?w=1200",
+    "description": "Protecting privileged communications and confidential client data.",
+    "content_overview": "Law firms, accounting firms, and management consultancies are custodians of M&A data, litigation strategy, and confidential client communications that nation-state actors and sophisticated criminals specifically target. Aurix AI delivers the security and integrity controls that professional responsibility rules require.",
+    "regulations": ["gdpr", "ccpa", "sox", "iso-27001"]
+  },
+  {
+    "slug": "telecommunications",
+    "title": "Telecommunications",
+    "hero_image": "https://images.unsplash.com/photo-1700463108455-956c595bc97b?w=1200",
+    "description": "Securing foundational communications infrastructure against nation-state threats.",
+    "content_overview": "Telecom carriers operate the networks that underpin every sector of the digital economy. Post-Salt Typhoon, regulatory expectations for telecom security have permanently elevated. Aurix AI delivers the network-scale monitoring and compliance documentation that FCC, CALEA, and CISA requirements demand.",
+    "regulations": ["gdpr", "ccpa", "nist"]
+  },
+  {
+    "slug": "transportation-logistics",
+    "title": "Transportation & Logistics",
+    "hero_image": "https://images.unsplash.com/photo-1703977883249-d959f2b0c1ae?w=1200",
+    "description": "Protecting critical transport infrastructure and global supply chains.",
+    "content_overview": "Airlines, freight carriers, port operators, and logistics platforms operate at the intersection of critical physical infrastructure and complex digital systems. Aurix AI provides IT/OT security monitoring, customs data integrity, and TSA-compliant incident reporting for transportation operators.",
+    "regulations": ["nist", "iso-27001"]
+  },
+  {
+    "slug": "pharmaceutical-biotech",
+    "title": "Pharmaceutical & Biotech",
+    "hero_image": "https://images.unsplash.com/photo-1748263582756-082fe4adaa5b?w=1200",
+    "description": "Safeguarding drug discovery IP and ensuring FDA-grade data integrity.",
+    "content_overview": "Pharmaceutical and biotech companies hold the world's most targeted IP and operate under FDA data integrity requirements that make data governance a regulatory imperative, not just best practice. Aurix AI delivers 21 CFR Part 11-compliant data integrity and GMP audit trails.",
+    "regulations": ["nist", "iso-27001"]
+  },
+  {
+    "slug": "media-entertainment",
+    "title": "Media & Entertainment",
+    "hero_image": "https://images.unsplash.com/photo-1663841366345-c0d6aa4889f6?w=1200",
+    "description": "Protecting pre-release content and subscriber data at streaming scale.",
+    "content_overview": "Studios, streaming platforms, and gaming companies manage valuable pre-release content, subscriber data for hundreds of millions of users, and AI recommendation systems now subject to the EU AI Act. Aurix AI provides content DLP, privacy compliance automation, and algorithmic transparency governance.",
+    "regulations": ["ccpa", "gdpr", "pci-dss", "eu-ai-act"]
+  },
+  {
+    "slug": "cybersecurity",
+    "title": "Cybersecurity",
+    "hero_image": "https://images.unsplash.com/photo-1768224656445-33d078c250b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwZGlnaXRhbCUyMHNlY3VyaXR5JTIwbmV0d29ya3xlbnwxfHx8fDE3NzIwMjE1NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "description": "Autonomous penetration testing, continuous threat monitoring, and AI-native security operations for enterprises.",
+    "content_overview": "Cybersecurity firms and internal security teams face an unprecedented threat landscape — nation-state actors, ransomware operators, and AI-augmented attackers operating at machine speed against expanding attack surfaces. Aurix AI delivers autonomous penetration testing via PHANTOM™, real-time threat intelligence through Lattice, and AI governance via Sentinel to transform security operations from reactive to predictive.",
+    "regulations": ["nist", "cmmc", "iso-27001", "soc2", "fedramp", "nist-800-53"]
+  }
+]

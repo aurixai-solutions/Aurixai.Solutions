@@ -1,0 +1,188 @@
+[
+  {
+    "PageID": 50, "PageTitle": "Step-by-Step Learning", "PageSlug": "/learn",
+    "HeroTitle": "Step-by-Step Learning", "HeroSubtitle": "Master Data Governance, Quality & Security \u2014 a comprehensive 8-part curriculum for business leaders",
+    "SectionNotes": "8-part curriculum with 64 lessons total. Part 1: Foundations of Data (lessons 1-8). Part 2: Data Governance Essentials (9-16). Part 3: Data Quality (17-24). Part 4: Data Security Fundamentals (25-32). Part 5: Regulatory Compliance (33-40). Part 6: AI & Machine Learning Governance (41-48). Part 7: Advanced Concepts (49-56). Part 8: Aurix Platform Deep Dive (57-64). Lessons with dedicated pages: 2 (/learn/data-landscape), 9 (/learn/what-is-data-governance), 17 (/learn/what-is-data-quality), 33 (/learn/regulatory-compliance), 57-63 (link to product pages)."
+  },
+  {
+    "PageID": 51, "PageTitle": "The Data Landscape", "PageSlug": "/learn/data-landscape",
+    "HeroTitle": "The Data Landscape", "HeroSubtitle": "A Bird's Eye View \u2014 understand how data flows, where it lives, and why modern infrastructure matters", "HeroBadge": "Part 1 \u2014 Lesson 2: Foundations",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"What Is 'Data' in a Business Context?","ParagraphContentHTML":"<p>Data isn't just numbers. It's names, addresses, product descriptions, email conversations, financial transactions, sensor readings, click patterns, voice recordings, images, documents, and millions of other information types.</p>"},
+      {"SectionNumber":2,"SectionTitleH2":"The Three Types of Business Data","SectionNotes":"Structured Data (20% of org data, rows/columns), Unstructured Data (80%, emails/docs/videos), Semi-Structured (growing, XML/JSON/logs/IoT)."}
+    ]
+  },
+  {
+    "PageID": 52, "PageTitle": "What is Data Governance?", "PageSlug": "/learn/what-is-data-governance",
+    "HeroTitle": "What is Data Governance?", "HeroSubtitle": "The Definition in Plain Language", "HeroBadge": "Part 2 \u2014 Lesson 9: Governance Essentials",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Three Pillars","SectionNotes":"People (roles, accountability), Process (workflows, request/report/propose), Technology (catalogs, monitoring, enforcement)."},
+      {"SectionNumber":2,"SectionTitleH2":"Common Myths","SectionNotes":"Myth 1: 'It's an IT project' (Reality: business initiative). Myth 2: 'Govern all data' (Reality: start critical). Myth 3: 'Slows things down' (Reality: accelerates via trust). Myth 4: 'Buy a tool and done' (Reality: people+process+tech)."}
+    ]
+  },
+  {
+    "PageID": 53, "PageTitle": "What is Data Quality?", "PageSlug": "/learn/what-is-data-quality",
+    "HeroTitle": "The Six Dimensions of Data Quality", "HeroSubtitle": "How to measure, monitor, and improve data quality across your organisation", "HeroBadge": "Part 3 \u2014 Lesson 17: Quality",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Six Dimensions","SectionNotes":"1. Completeness (% records with all required fields). 2. Accuracy (matches real world). 3. Consistency (uniform across systems). 4. Timeliness (fresh for intended use). 5. Uniqueness (no duplicates)."},
+      {"SectionNumber":2,"SectionTitleH2":"The Cost of Bad Data","SectionNotes":"Financial Impact ($3.1T US economy/yr, 15-25% revenue), Productivity Loss (50% time hunting/fixing), Decision Risk (wrong campaigns/forecasts), Compliance Risk (fines, restatements)."}
+    ]
+  },
+  {
+    "PageID": 54, "PageTitle": "Request a Demo", "PageSlug": "/demo",
+    "HeroTitle": "See Aurix in Action", "HeroSubtitle": "Book a personalized demo with our engineering team",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Benefits","SectionNotes":"Custom demo tailored to your industry, Technical deep-dive with engineers, ROI analysis, No obligation."},
+      {"SectionNumber":2,"SectionTitleH2":"Demo Form","SectionNotes":"Fields: name, email, company, title, industry dropdown (14 industries), interest dropdown (8 products: Lattice, Prism, PEN, SENTINEL, PHANTOM, AgenticMind, Clarity, Full Platform), message, marketing+privacy consent."}
+    ]
+  },
+  {
+    "PageID": 55, "PageTitle": "Blog", "PageSlug": "/blog",
+    "HeroTitle": "Insights & Research", "HeroSubtitle": "Technical deep dives, industry analysis, and product perspectives",
+    "SectionNotes": "6 blog post cards: 1. 'Why AI Hallucinations Are the Hidden Risk' (AI Safety, Feb 18 2026, 8 min). 2. 'The CLOUD Act vs. GDPR Paradox' (Compliance, Feb 12, 12 min). 3. 'The Human Interface\u2122 Philosophy' (Product, Feb 5, 6 min). 4. 'Self-Healing Data Pipelines: Beyond 99.9%' (Engineering, Jan 29, 10 min). 5. 'Why Annual Pen Tests Leave You Exposed 364 Days' (Security, Jan 22, 7 min). 6. 'Governing AI Agent Swarms' (AI Governance, Jan 15, 9 min)."
+  },
+  {
+    "PageID": 56, "PageTitle": "Case Studies", "PageSlug": "/case-studies",
+    "HeroTitle": "Case Studies", "HeroSubtitle": "Real results from real deployments",
+    "SectionNotes": "3+ case study cards: 1. Fortune 500 Bank (Financial Services): 78% fraud loss reduction, 340% ROI, 92% false positive drop, 5-min MTTR. 2. Regional Health System (Healthcare): 100% HIPAA audit pass, 47 devices monitored, 67%\u219299.2% PHI quality, 85% IR reduction. 3. Defense Contractor: CMMC Level 3 certified in 90 days, $12M contract enabled."
+  },
+  {
+    "PageID": 57, "PageTitle": "Global Operations", "PageSlug": "/global",
+    "HeroTitle": "Global Operations", "HeroSubtitle": "Enterprise-grade AI in 40+ languages, across 100+ countries", "HeroBadge": "International",
+    "StatCards": [{"Value":"40+","Label":"Languages"},{"Value":"6","Label":"Continents"},{"Value":"24/7","Label":"Global Support"},{"Value":"100+","Label":"Countries"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Features","SectionNotes":"Full Localization (40+ languages), Regional Compliance (GDPR/CCPA/LGPD/PIPL/PDPA), Data Residency (cryptographic border guarantees), 24/7 Support (follow-the-sun)."},
+      {"SectionNumber":2,"SectionTitleH2":"Regional Coverage","SectionNotes":"Americas (US/Canada/Brazil/Mexico/Colombia; CCPA/LGPD/PIPEDA), Europe (UK/Germany/France/Netherlands/Sweden; GDPR/NIS2/DORA), Asia Pacific (Japan/Singapore/Australia/India/Korea; APPI/PDPA/Privacy Act), Middle East & Africa (UAE/Saudi/South Africa/Kenya; POPIA/DIFC/ADGM)."}
+    ]
+  },
+  {
+    "PageID": 58, "PageTitle": "Developer Ecosystem", "PageSlug": "/developer-ecosystem",
+    "HeroTitle": "Developer Ecosystem & Gallery", "HeroSubtitle": "Build Once, Share Securely, Deploy Everywhere",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Key Features","SectionNotes":"Build Once Deploy Thousands, Zero Customer Data Exposure, Industry-Specific Solutions."},
+      {"SectionNumber":2,"SectionTitleH2":"Shareable Items","SectionNotes":"Mini-Apps & Custom Dashboards (share structure/logic/UI, never data/credentials), Data Pipelines & ETL Workflows (pipeline structure/quality checks, never source data/API keys), Custom Integrations & API Bridges (integration logic/security rules, never tokens/connection strings)."},
+      {"SectionNumber":3,"SectionTitleH2":"Gallery Examples","SectionNotes":"Real-Time Compliance Dashboard (Financial, 4.8\u2605, 1,247 downloads), HIPAA Patient Data Pipeline (Healthcare, 4.9\u2605, 892), IoT Sensor Data Aggregator (Manufacturing, 4.7\u2605, 2,134)."},
+      {"SectionNumber":4,"SectionTitleH2":"Security","SectionNotes":"Granular Access Control (IP whitelist, time-based, expiration), Built-In Security (E2E encryption, sandbox, rate limiting), Technology Agnostic (REST/OAuth 2.0/WebSocket/GraphQL)."}
+    ]
+  },
+  {
+    "PageID": 59, "PageTitle": "Training & Academy", "PageSlug": "/training",
+    "HeroTitle": "Aurix Training Academy", "HeroSubtitle": "Comprehensive training programs for every role",
+    "StatCards": [{"Value":"200+","Label":"Training Modules"},{"Value":"50+","Label":"Video Tutorials"},{"Value":"98%","Label":"Satisfaction Rate"},{"Value":"24/7","Label":"Expert Support"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Delivery Methods","SectionNotes":"Online Courseware (self-paced, 50+ videos, live coach), On-Site Training (at your facility, customized), Virtual Instructor-Led (live, virtual labs, breakout rooms, recorded)."},
+      {"SectionNumber":2,"SectionTitleH2":"Role-Based Programs","SectionNotes":"Executives (4-hour workshop), Data Stewards (2-day intensive), Security Analysts (3-day intensive), Engineers (3-day intensive), Daily Users (1-day workshop), AI/ML Practitioners (2-day intensive)."}
+    ]
+  },
+  {
+    "PageID": 60, "PageTitle": "Data Theater", "PageSlug": "/video-showcase",
+    "HeroTitle": "Data Theater", "HeroSubtitle": "Watch and learn \u2014 product demos, tutorials, case studies, and educational content",
+    "SectionNotes": "Filterable video library with categories: Platform Overview, Data Governance, Security, Tutorials, Case Studies. 6 placeholder videos: Aurix Platform Overview (8 min), Data Governance Fundamentals (12 min), Lattice Threat Detection (10 min), Getting Started with Prism (15 min), Healthcare Data Compliance (7 min), SWARM Agents Demo (14 min). Modal video player with maximize."
+  },
+  {
+    "PageID": 61, "PageTitle": "DecisionScape", "PageSlug": "/decisionscape",
+    "HeroTitle": "DecisionScape\u2122", "HeroSubtitle": "AI Decision Observability \u2014 See How AI Thinks",
+    "SectionNotes": "Interactive decision tree/journey/constellation visualization of a $2.4M Q3 Campaign Budget Allocation. 14 decision nodes with full metadata: confidence scores, token counts, latency, cost, data quality scores, emotion states, factor breakdowns. 3 dead ends (Display CTR below threshold, Influencer insufficient data, Podcast audience mismatch). Final allocation: 55% Paid Social ($1.32M), 25% Content/SEO ($600K), 12% Email ($288K), 8% Events ($192K). 87% confidence. Three view modes: Tree, Journey, Constellation."
+  },
+  {
+    "PageID": 62, "PageTitle": "Data Sovereignty", "PageSlug": "/solutions/data-sovereignty",
+    "HeroTitle": "Data Sovereignty", "HeroSubtitle": "True Data Sovereignty in a Hyperscaler World",
+    "StatCards": [{"Value":"137","Label":"Countries with Data Laws"},{"Value":"\u20ac20M","Label":"Max GDPR Fine"},{"Value":"92%","Label":"Western Data in US Infrastructure"},{"Value":"60%","Label":"Financial Firms Adopting Sovereign Cloud by 2028"}],
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"The Sovereignty Crisis","SectionNotes":"4 crisis cards: Microsoft UK Police Data Failure, CLOUD Act vs GDPR Paradox, DORA & NIS2 2025 Enforcement Wave, AI Era Amplification."},
+      {"SectionNumber":2,"SectionTitleH2":"Regulatory Coverage","SectionNotes":"GDPR (EU), CLOUD Act (US), DORA (EU Financial), NIS2 (EU Critical Infra), China PIPL, plus more."}
+    ]
+  },
+  {
+    "PageID": 63, "PageTitle": "Forge Studio", "PageSlug": "/solutions/forge-studio",
+    "HeroTitle": "Forge Studio\u2122", "HeroSubtitle": "Citizen AI Builder \u2014 Build Enterprise AI Applications Without Code",
+    "StatCards": [{"Value":"50+","Label":"Pre-Built Components"},{"Value":"<5 min","Label":"Time to Deploy"},{"Value":"100%","Label":"Governed Apps"},{"Value":"Zero","Label":"Code Required"}],
+    "SectionNotes": "4 component categories: Text Processing, Data Processing, Integrations, AI Models. Governance features: Automatic Governance, Clarity\u2122 Integration, IT Oversight Console."
+  },
+  {
+    "PageID": 64, "PageTitle": "AgentVerse", "PageSlug": "/solutions/agentverse",
+    "HeroTitle": "AgentVerse\u2122", "HeroSubtitle": "The Universal AI Agent Marketplace \u2014 Every Agent. One Gateway.",
+    "PageSections": [
+      {"SectionNumber":1,"SectionTitleH2":"Core Pillars","SectionNotes":"Marketplace Browser (discover/evaluate/subscribe across Gravitee, Kong, MCP Registry, Smithery), Agent Wrapper (protocol translation: MCP, A2A, REST, gRPC), Cost Intelligence."},
+      {"SectionNumber":2,"SectionTitleH2":"Protocol Support","SectionNotes":"MCP, A2A, REST, gRPC with automatic translation."}
+    ]
+  },
+  {
+    "PageID": 70, "PageTitle": "Dynamic Industry Pages", "PageSlug": "/industries/:slug",
+    "SectionNotes": "15 industry pages rendered from /src/data/industries.json + /src/data/industryPageContent.ts via IndustryPage.tsx and DynamicPage.tsx. Each page has: hero with industry-specific image, overview paragraph, linked compliance regulations, Aurix platform mapping. Industries:",
+    "PageSections": [
+      {"SectionNumber":1,"CardItems":[
+        {"CardPositionNum":1,"CardTitleH3":"Financial Services","CardParagraphContent":"Secure, compliant, and real-time financial intelligence. From fraud detection to capital adequacy modeling.","CardHref":"/industries/financial-services","CardBadgeTags":["Basel III","SOX","PCI DSS","GDPR","GLBA","DORA","MiFID II"]},
+        {"CardPositionNum":2,"CardTitleH3":"Healthcare","CardParagraphContent":"Patient-centric data governance and privacy protection. HIPAA-compliant infrastructure for predictive analytics.","CardHref":"/industries/healthcare","CardBadgeTags":["HIPAA","HITECH","GDPR","HITRUST"]},
+        {"CardPositionNum":3,"CardTitleH3":"Retail & E-Commerce","CardParagraphContent":"Consumer trust through transparent data handling. Balance personalization with privacy.","CardHref":"/industries/retail","CardBadgeTags":["CCPA","GDPR","PCI DSS"]},
+        {"CardPositionNum":4,"CardTitleH3":"Manufacturing","CardParagraphContent":"Securing the industrial internet of things (IIoT). Supply chain and production line security.","CardHref":"/industries/manufacturing","CardBadgeTags":["ISO 27001","NIST","GDPR","CMMC"]},
+        {"CardPositionNum":5,"CardTitleH3":"Technology & SaaS","CardParagraphContent":"Scalable compliance for high-growth tech companies. Automated evidence collection.","CardHref":"/industries/technology","CardBadgeTags":["SOC 2","ISO 27001","GDPR","CCPA","EU AI Act"]},
+        {"CardPositionNum":6,"CardTitleH3":"Government & Public Sector","CardParagraphContent":"FedRAMP, FISMA, OMB AI guidance, citizen data sovereignty.","CardHref":"/industries/government","CardBadgeTags":["FISMA","FedRAMP","NIST 800-53","CJIS"]},
+        {"CardPositionNum":7,"CardTitleH3":"Defense & Intelligence","CardParagraphContent":"CMMC L1-L3, CUI protection, APT detection, air-gap support.","CardHref":"/industries/defense","CardBadgeTags":["CMMC","DFARS","NIST 800-171","ITAR"]},
+        {"CardPositionNum":8,"CardTitleH3":"Energy & Utilities","CardParagraphContent":"NERC CIP, ICS/SCADA protection, OT monitoring, grid resilience.","CardHref":"/industries/energy","CardBadgeTags":["NERC CIP","TSA Pipeline","IEC 62443"]},
+        {"CardPositionNum":9,"CardTitleH3":"Insurance","CardParagraphContent":"Actuarial model risk, claims fraud detection, underwriting governance.","CardHref":"/industries/insurance","CardBadgeTags":["NAIC","GDPR","SOX"]},
+        {"CardPositionNum":10,"CardTitleH3":"Legal & Professional Services","CardParagraphContent":"Client data privilege, matter confidentiality, e-discovery security.","CardHref":"/industries/legal","CardBadgeTags":["GDPR","ABA Ethics"]},
+        {"CardPositionNum":11,"CardTitleH3":"Education","CardParagraphContent":"FERPA, COPPA, student data privacy, research IP protection.","CardHref":"/industries/education","CardBadgeTags":["FERPA","COPPA"]},
+        {"CardPositionNum":12,"CardTitleH3":"Real Estate","CardParagraphContent":"Transaction fraud, AML for wire transfers, building system IoT security.","CardHref":"/industries/real-estate","CardBadgeTags":["AML","BSA"]},
+        {"CardPositionNum":13,"CardTitleH3":"Media & Entertainment","CardParagraphContent":"Content IP protection, deepfake detection, rights management.","CardHref":"/industries/media","CardBadgeTags":["DMCA","GDPR"]},
+        {"CardPositionNum":14,"CardTitleH3":"Telecommunications","CardParagraphContent":"CDR data governance, SS7/Diameter security, 5G core protection.","CardHref":"/industries/telecommunications","CardBadgeTags":["CPNI","GDPR","NIS2"]},
+        {"CardPositionNum":15,"CardTitleH3":"Transportation & Logistics","CardParagraphContent":"Supply chain data integrity, vehicle system security, customs compliance.","CardHref":"/industries/transportation","CardBadgeTags":["IMO","C-TPAT","GDPR"]}
+      ]}
+    ]
+  },
+  {
+    "PageID": 71, "PageTitle": "Dynamic Compliance Pages", "PageSlug": "/compliance/:slug",
+    "SectionNotes": "21 compliance/regulation pages rendered from /src/data/compliance.json + /src/data/compliancePageContent.ts via CompliancePage.tsx. Each page has: regulation title, full name, audit frequency, penalties, content overview, affected industries with cross-links. Regulations:",
+    "PageSections": [
+      {"SectionNumber":1,"CardItems":[
+        {"CardPositionNum":1,"CardTitleH3":"Basel III / IV","CardParagraphContent":"Capital adequacy, stress testing, liquidity risk management, BCBS 239 data aggregation. Penalties: Capital add-ons, distribution restrictions.","CardBadgeTags":["Quarterly/Annual","Financial Services"]},
+        {"CardPositionNum":2,"CardTitleH3":"SOX (Sarbanes-Oxley)","CardParagraphContent":"Financial disclosures, executive certification, internal controls. Penalties: Up to $5M and 20 years imprisonment.","CardBadgeTags":["Annual/Quarterly","Financial, Technology, Manufacturing, Retail"]},
+        {"CardPositionNum":3,"CardTitleH3":"PCI DSS v4.0","CardParagraphContent":"Payment card data security: web skimming prevention, continuous compliance. Penalties: $5,000\u2013$100,000/month, loss of card acceptance.","CardBadgeTags":["Annual QSA/Quarterly Scans","Financial, Retail, Technology, Healthcare"]},
+        {"CardPositionNum":4,"CardTitleH3":"GDPR","CardParagraphContent":"World's most consequential data privacy regulation. Rights to erasure, portability, algorithmic transparency. Penalties: \u20ac20M or 4% of global turnover.","CardBadgeTags":["Ongoing","Financial, Healthcare, Retail, Manufacturing, Technology, Government, Insurance, Legal, Telecom, Media"]},
+        {"CardPositionNum":5,"CardTitleH3":"GLBA","CardParagraphContent":"Gramm-Leach-Bliley Act \u2014 financial privacy, safeguards rule.","CardBadgeTags":["Financial Services"]},
+        {"CardPositionNum":6,"CardTitleH3":"HIPAA","CardParagraphContent":"Health Insurance Portability and Accountability Act \u2014 PHI protection, security/privacy rules.","CardBadgeTags":["Healthcare"]},
+        {"CardPositionNum":7,"CardTitleH3":"HITECH","CardParagraphContent":"Health Information Technology for Economic and Clinical Health Act.","CardBadgeTags":["Healthcare"]},
+        {"CardPositionNum":8,"CardTitleH3":"HITRUST","CardParagraphContent":"Health Information Trust Alliance Common Security Framework.","CardBadgeTags":["Healthcare"]},
+        {"CardPositionNum":9,"CardTitleH3":"CCPA / CPRA","CardParagraphContent":"California Consumer Privacy Act / California Privacy Rights Act.","CardBadgeTags":["Retail, Technology"]},
+        {"CardPositionNum":10,"CardTitleH3":"SOC 2 Type II","CardParagraphContent":"Service Organization Control \u2014 Trust Services Criteria.","CardBadgeTags":["Technology"]},
+        {"CardPositionNum":11,"CardTitleH3":"ISO 27001","CardParagraphContent":"Information Security Management Systems standard.","CardBadgeTags":["All Industries"]},
+        {"CardPositionNum":12,"CardTitleH3":"NIST CSF","CardParagraphContent":"NIST Cybersecurity Framework.","CardBadgeTags":["Government, Defense, All"]},
+        {"CardPositionNum":13,"CardTitleH3":"CMMC","CardParagraphContent":"Cybersecurity Maturity Model Certification for DoD contractors.","CardBadgeTags":["Defense, Manufacturing"]},
+        {"CardPositionNum":14,"CardTitleH3":"FedRAMP","CardParagraphContent":"Federal Risk and Authorization Management Program.","CardBadgeTags":["Government, Technology"]},
+        {"CardPositionNum":15,"CardTitleH3":"DORA","CardParagraphContent":"Digital Operational Resilience Act (EU Financial).","CardBadgeTags":["Financial Services"]},
+        {"CardPositionNum":16,"CardTitleH3":"NIS2","CardParagraphContent":"Network and Information Security Directive 2 (EU).","CardBadgeTags":["Energy, Healthcare, Transport, Digital Infra"]},
+        {"CardPositionNum":17,"CardTitleH3":"EU AI Act","CardParagraphContent":"EU Artificial Intelligence Act \u2014 risk-based classification, transparency mandates.","CardBadgeTags":["Technology, All"]},
+        {"CardPositionNum":18,"CardTitleH3":"MiFID II","CardParagraphContent":"Markets in Financial Instruments Directive II.","CardBadgeTags":["Financial Services"]},
+        {"CardPositionNum":19,"CardTitleH3":"NERC CIP","CardParagraphContent":"North American Electric Reliability Corporation Critical Infrastructure Protection.","CardBadgeTags":["Energy"]},
+        {"CardPositionNum":20,"CardTitleH3":"FERPA","CardParagraphContent":"Family Educational Rights and Privacy Act.","CardBadgeTags":["Education"]},
+        {"CardPositionNum":21,"CardTitleH3":"COPPA","CardParagraphContent":"Children's Online Privacy Protection Act.","CardBadgeTags":["Education, Technology"]}
+      ]}
+    ]
+  },
+  {
+    "PageID": 80, "PageTitle": "Remaining Standalone Pages (Summary)", "PageSlug": "various",
+    "SectionNotes": "The following pages exist but contain primarily forms, interactive tools, or administrative interfaces rather than editorial content:",
+    "PageSections": [
+      {"SectionNumber":1,"CardTitleH3":"Advertisements Page","CardParagraphContent":"Google AdSense integration page.","CardHref":"/advertisements"},
+      {"SectionNumber":2,"CardTitleH3":"API Documentation","CardParagraphContent":"Technical API reference page.","CardHref":"/api-docs"},
+      {"SectionNumber":3,"CardTitleH3":"Policy Management","CardParagraphContent":"Data governance policy management interface.","CardHref":"/policy-management"},
+      {"SectionNumber":4,"CardTitleH3":"Real-Time Monitoring","CardParagraphContent":"Live system monitoring dashboard.","CardHref":"/real-time-monitoring"},
+      {"SectionNumber":5,"CardTitleH3":"Security Profiles","CardParagraphContent":"770+ security capability profiles browser.","CardHref":"/security-profiles"},
+      {"SectionNumber":6,"CardTitleH3":"Solution Demos","CardParagraphContent":"Interactive product demonstration page.","CardHref":"/solution-demos"},
+      {"SectionNumber":7,"CardTitleH3":"Compare to Others","CardParagraphContent":"Full competitive comparison modal (accessible from navbar BarChart3 icon). Resizable/maximizable/minimizable/pinnable. Competitor checkbox filter, custom AI competitor generation via Claude, CSV export, print, search, Magic Quadrant sub-modal.","CardHref":"modal"},
+      {"SectionNumber":8,"CardTitleH3":"Regulatory Compliance Learning","CardParagraphContent":"Learning-oriented compliance page (lesson 33).","CardHref":"/learn/regulatory-compliance"},
+      {"SectionNumber":9,"CardTitleH3":"Sentinel Gateway Sub-page","CardParagraphContent":"Deep dive into SENTINEL Universal Model Gateway.","CardHref":"/solutions/sentinel/gateway"},
+      {"SectionNumber":10,"CardTitleH3":"Sentinel Audit Store Sub-page","CardParagraphContent":"Deep dive into SENTINEL immutable audit log storage.","CardHref":"/solutions/sentinel/audit-store"},
+      {"SectionNumber":11,"CardTitleH3":"Agenta Analytics","CardParagraphContent":"Revenue intelligence analytics module.","CardHref":"/solutions/agenta/analytics"},
+      {"SectionNumber":12,"CardTitleH3":"Agenta Campaigns","CardParagraphContent":"Hybrid automated campaign engine module.","CardHref":"/solutions/agenta/campaigns"},
+      {"SectionNumber":13,"CardTitleH3":"Agenta Pipelines","CardParagraphContent":"Visual pipeline management module.","CardHref":"/solutions/agenta/pipelines"},
+      {"SectionNumber":14,"CardTitleH3":"Agenta Prospecting","CardParagraphContent":"Autonomous prospect discovery module.","CardHref":"/solutions/agenta/prospecting"},
+      {"SectionNumber":15,"CardTitleH3":"Lattice Behavioral Analytics","CardParagraphContent":"ML-based behavioral analysis sub-page.","CardHref":"/solutions/lattice/behavioral-analytics"},
+      {"SectionNumber":16,"CardTitleH3":"Lattice Deployment","CardParagraphContent":"Deployment options and integration guide.","CardHref":"/solutions/lattice/deployment"},
+      {"SectionNumber":17,"CardTitleH3":"Lattice Threat Intelligence","CardParagraphContent":"Threat intelligence feeds and correlation.","CardHref":"/solutions/lattice/threat-intelligence"},
+      {"SectionNumber":18,"CardTitleH3":"PHANTOM Mandate","CardParagraphContent":"Industry audit requirements mandate page.","CardHref":"/solutions/phantom/mandate"},
+      {"SectionNumber":19,"CardTitleH3":"Admin / Visual Editor","CardParagraphContent":"CMS admin panel with PageEditor, HeroManager, VisualEditor for managing all page content and hero overrides via Supabase KV.","CardHref":"/admin"},
+      {"SectionNumber":20,"CardTitleH3":"Coming Soon Pages","CardParagraphContent":"6 concept pages at /solutions/{id} (data-governance, data-quality, marketing-intelligence, agentic-frameworks, cybersecurity, industries) rendered via ComingSoonPage with hero defaults.","CardHref":"/solutions/{concept-id}"}
+    ]
+  }
+]
