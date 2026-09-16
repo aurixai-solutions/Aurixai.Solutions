@@ -1,28 +1,44 @@
 import React, { useState, useEffect } from "react";
 import { PageHero } from "../components/ui/PageHero";
 import { GlassCard } from "../components/ui/GlassCard";
-import { Shield, Eye, Users, User } from "lucide-react";
+import { Shield, Eye, Users, User, ChevronDown, ChevronUp, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router";
 import { MOUNTAIN } from "../components/heroImages";
 
+interface StaffMember {
+  id: string;
+  name: string;
+  title: string;
+  location: string;
+  email: string;
+  phone: string;
+  photo: string;
+  bio: string;
+}
+
 export function About() {
-  const [teamMembers, setTeamMembers] = useState<any[]>([]);
+  const [teamMembers, setTeamMembers] = useState<StaffMember[]>([]);
   const [activePillar, setActivePillar] = useState(1);
+  const [expandedBio, setExpandedBio] = useState<string | null>(null);
 
   useEffect(() => {
-    const loadContent = async () => {
+    const loadStaff = async () => {
       try {
-        const res = await fetch('/content.json');
+        const res = await fetch("/staff.json");
         if (res.ok) {
           const data = await res.json();
-          if (data.executive_team && Array.isArray(data.executive_team) && data.executive_team.length > 0) {
-            setTeamMembers(data.executive_team);
+          if (Array.isArray(data) && data.length > 0) {
+            setTeamMembers(data);
           }
         }
       } catch (e) {}
     };
-    loadContent();
+    loadStaff();
   }, []);
+
+  const toggleBio = (id: string) => {
+    setExpandedBio(expandedBio === id ? null : id);
+  };
 
   return (
     <div className="min-h-screen relative" style={{ backgroundColor: 'rgba(241, 245, 249, 0.85)', backdropFilter: 'blur(12px)' }}>
@@ -48,13 +64,13 @@ export function About() {
             </p>
           </div>
 
-          {/* Clickable Pillar Cards — act as tab selectors */}
+          {/* Clickable Pillar Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { num: 1, label: "Pillar 1:", title: "Transparency First", icon: Eye,
                 desc: "No black boxes. We provide full visibility into how our AI models make decisions and handle your data." },
               { num: 2, label: "Pillar 2:", title: "Security by Design", icon: Shield,
-                desc: "Our systems are built with security as a foundational layer, not an afterthought. Your data\u2019s integrity is paramount." },
+                desc: "Our systems are built with security as a foundational layer, not an afterthought. Your data's integrity is paramount." },
               { num: 3, label: "Pillar 3:", title: "Human-Centric AI", icon: Users,
                 desc: "AI should make human expertise more effective, not obsolete. The decision authority stays with the human operator." },
             ].map((p) => (
@@ -89,184 +105,79 @@ export function About() {
 
           {/* Tabbed Detail Panel */}
           <div className="relative">
-            {/* Pillar 1: Transparency First */}
             {activePillar === 1 && (
               <GlassCard className="p-8 md:p-10 space-y-6 animate-in fade-in duration-300">
-                <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
-                  Pillar 1: Transparency First
-                </h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Pillar 1: Transparency First</h2>
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">What This Means</h3>
                   <p className="text-slate-600 leading-relaxed mb-4">
                     The AI industry has a trust problem, and it&apos;s self-inflicted. Most platforms treat
                     their decision-making as proprietary magic — data goes in, recommendations come out,
                     and the customer is expected to trust the black box. We watched this pattern destroy
-                    enterprise confidence for two decades before AI even entered the conversation. ERP
-                    systems that couldn&apos;t explain their own calculations. BI platforms that surfaced
-                    insights with no audit trail. CRM tools that scored leads with invisible logic.
+                    enterprise confidence for two decades before AI even entered the conversation.
                   </p>
                   <p className="text-slate-600 leading-relaxed">
                     At Aurix, transparency is not a feature toggle. It is the architectural foundation.
-                    Every AI decision rendered by our platforms produces
-                    a complete reasoning chain: what data was considered, what was weighted, what was
-                    excluded, and why. This isn't a debug mode for developers. This is the default
-                    experience for every user at every role level.
+                    Every AI decision rendered by our platforms produces a complete reasoning chain: what
+                    data was considered, what was weighted, what was excluded, and why.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">How We Enforce It</h3>
                   <div className="space-y-4 text-slate-600 leading-relaxed">
-                    <p>
-                      <strong className="text-slate-800">Decision Audit Trails:</strong> Every AI-generated
-                      recommendation, score, or action is logged with full provenance. Not just timestamps —
-                      the complete decision graph. Which data sources contributed, what confidence thresholds
-                      were applied, what alternatives were considered and rejected.
-                    </p>
-                    <p>
-                      <strong className="text-slate-800">Explainable Outputs:</strong> Our agents don&apos;t
-                      just return answers. They return answers with reasoning. A marketing recommendation
-                      from Agenta tells you why it&apos;s recommending a specific channel, what historical
-                      data supports it, and what the risk profile looks like if conditions change.
-                    </p>
-                    <p>
-                      <strong className="text-slate-800">Human-Readable Governance Logs:</strong> Prism&apos;s
-                      governance layer doesn&apos;t produce machine logs that require a data engineer to
-                      interpret. It produces narrative-style audit reports that a compliance officer, a board
-                      member, or a regulator can read and understand without technical translation.
-                    </p>
-                    <p>
-                      <strong className="text-slate-800">The Anti-Palantir Standard:</strong> We position
-                      explicitly against the opacity model. Where competitors hide complexity behind
-                      proprietary walls, we expose it. Not because it&apos;s easy — it&apos;s significantly
-                      harder to build transparent systems — but because trustworthy AI cannot exist without
-                      it. If a customer can&apos;t explain to their own board how our platform reached a
-                      conclusion, we have failed.
-                    </p>
+                    <p><strong className="text-slate-800">Decision Audit Trails:</strong> Every AI-generated recommendation, score, or action is logged with full provenance — the complete decision graph.</p>
+                    <p><strong className="text-slate-800">Explainable Outputs:</strong> Our agents don&apos;t just return answers. They return answers with reasoning.</p>
+                    <p><strong className="text-slate-800">Human-Readable Governance Logs:</strong> Prism&apos;s governance layer produces narrative-style audit reports that anyone can read.</p>
+                    <p><strong className="text-slate-800">The Anti-Palantir Standard:</strong> Where competitors hide complexity behind proprietary walls, we expose it.</p>
                   </div>
                 </div>
               </GlassCard>
             )}
-
-            {/* Pillar 2: Security by Design */}
             {activePillar === 2 && (
               <GlassCard className="p-8 md:p-10 space-y-6 animate-in fade-in duration-300">
-                <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
-                  Pillar 2: Security by Design
-                </h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Pillar 2: Security by Design</h2>
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">What This Means</h3>
                   <p className="text-slate-600 leading-relaxed mb-4">
-                    Security-as-afterthought has been the default operating model in enterprise software
-                    for as long as enterprise software has existed. Ship the feature, patch the vulnerability,
-                    apologize to the customer, repeat. We&apos;ve sat in enough post-breach war rooms to know
-                    exactly how that cycle plays out — and exactly what it costs. Not just in dollars, but in
-                    customer trust, regulatory exposure, and institutional reputation that takes years to rebuild.
+                    Security-as-afterthought has been the default operating model in enterprise software.
+                    Ship the feature, patch the vulnerability, apologize to the customer, repeat.
                   </p>
                   <p className="text-slate-600 leading-relaxed">
                     At Aurix, security is not a layer bolted on after release. It is embedded at the
-                    architectural level from day one. Our systems ship with GDPR and NIS2 compliance as
-                    structural requirements, not optional modules. Every data pipeline, every API endpoint,
-                    every agent interaction is designed with the assumption that it will be audited, attacked,
-                    and scrutinized.
+                    architectural level from day one.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">How We Enforce It</h3>
                   <div className="space-y-4 text-slate-600 leading-relaxed">
-                    <p>
-                      <strong className="text-slate-800">Compliance-Native Architecture:</strong> GDPR, NIS2,
-                      and emerging regulatory frameworks aren&apos;t checklists we complete before launch.
-                      They&apos;re design constraints that shape how systems are built. Data residency, consent
-                      management, right-to-erasure, breach notification — these are first-class architectural
-                      concerns, not aftermarket add-ons.
-                    </p>
-                    <p>
-                      <strong className="text-slate-800">Aurix AI — Cybersecurity Intelligence Platform:</strong> We
-                      didn't build a security product because the market needed one. We built it because our
-                      own infrastructure demanded it. Aurix AI is the same threat intelligence and response platform
-                      we use internally, productized for customers who need the same level of protection.
-                    </p>
-                    <p>
-                      <strong className="text-slate-800">Role-Based Access at Every Layer:</strong> Our 5-tier
-                      role matrix (Super Admin, Admin, Editor, User, Viewer) is enforced at the database level,
-                      not the UI level. A Viewer doesn&apos;t just see a disabled button — the API rejects the
-                      request entirely. There is no path from the frontend to an unauthorized action.
-                    </p>
-                    <p>
-                      <strong className="text-slate-800">Defog Shield — Insurance-Backed Liability Transfer:</strong> We
-                      are the only AI platform that backs its governance guarantees with actual insurance coverage.
-                      This isn't a marketing gimmick — it's a structural commitment. If our platform&apos;s
-                      governance layer fails to catch a compliance violation, the liability doesn't sit with
-                      the customer.
-                    </p>
-                    <p>
-                      <strong className="text-slate-800">Quantum-Ready Security:</strong> Aurix is the only AI
-                      company launching with native quantum computing integration across all agents. This includes
-                      quantum-resistant encryption protocols and quantum-classical hybrid decision systems that
-                      cannot be retrofitted by competitors operating on legacy architectures.
-                    </p>
+                    <p><strong className="text-slate-800">Compliance-Native Architecture:</strong> GDPR, NIS2, and emerging regulatory frameworks are design constraints, not checklists.</p>
+                    <p><strong className="text-slate-800">Role-Based Access at Every Layer:</strong> Our 5-tier role matrix is enforced at the database level, not the UI level.</p>
+                    <p><strong className="text-slate-800">Defog Shield:</strong> Insurance-backed liability transfer — we are the only AI platform that backs its governance guarantees with actual insurance coverage.</p>
+                    <p><strong className="text-slate-800">Quantum-Ready Security:</strong> Native quantum computing integration with quantum-resistant encryption protocols.</p>
                   </div>
                 </div>
               </GlassCard>
             )}
-
-            {/* Pillar 3: Human-Centric AI */}
             {activePillar === 3 && (
               <GlassCard className="p-8 md:p-10 space-y-6 animate-in fade-in duration-300">
-                <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
-                  Pillar 3: Human-Centric AI
-                </h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Pillar 3: Human-Centric AI</h2>
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">What This Means</h3>
                   <p className="text-slate-600 leading-relaxed mb-4">
-                    The dominant narrative in AI is replacement. Automate the human out of the loop.
-                    Reduce headcount. Cut costs. We&apos;ve watched this ideology wreck more organizations
-                    than any technology failure ever could. Not because automation is wrong, but because
-                    undirected automation is dangerous. Systems that remove human judgment don&apos;t
-                    eliminate errors — they eliminate the ability to catch errors before they compound.
+                    The dominant narrative in AI is replacement. We&apos;ve watched this ideology wreck more
+                    organizations than any technology failure ever could.
                   </p>
                   <p className="text-slate-600 leading-relaxed">
                     Aurix is built on a fundamentally different premise: AI should make human expertise
-                    more effective, not obsolete. Our agents are designed as collaborators, not replacements.
-                    They surface patterns humans would miss, handle repetitive processing humans shouldn&apos;t
-                    waste time on, and present options with context — but the decision authority stays with the
-                    human operator. Always.
+                    more effective, not obsolete.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">How We Enforce It</h3>
                   <div className="space-y-4 text-slate-600 leading-relaxed">
-                    <p>
-                      <strong className="text-slate-800">Truthfulness Over Helpfulness:</strong> This is our core
-                      governance principle and it cuts against the entire industry. Most AI systems are optimized
-                      to be helpful — to give users what they want to hear. Our systems are optimized to be
-                      truthful — to give users what they need to know, even when it&apos;s uncomfortable. An
-                      Agenta campaign recommendation that says &quot;this strategy has a 30% chance of failure
-                      based on historical precedent&quot; is more valuable than one that says &quot;great idea,
-                      here&apos;s how to execute it.&quot;
-                    </p>
-                    <p>
-                      <strong className="text-slate-800">Human-in-the-Loop by Default:</strong> No Aurix agent
-                      executes a consequential action without human approval. Suggestions, recommendations,
-                      analysis, pattern detection — all automated. Execution of decisions that affect customers,
-                      budgets, security posture, or compliance status — all require human confirmation. This is
-                      not configurable. It is structural.
-                    </p>
-                    <p>
-                      <strong className="text-slate-800">Caspian — The Two-Model Advisory Architecture:</strong> Our
-                      AI advisor doesn&apos;t just answer questions. It runs a Strategy model that evaluates
-                      business context and a Builder model that generates implementation. Neither model operates
-                      alone. The Strategy layer is trained on $300B+ in documented business failures — Quibi,
-                      WeWork, Theranos, Bud Light — specifically so it can tell you when your plan resembles a
-                      pattern that has already failed. That&apos;s not adversarial. That&apos;s partnership.
-                    </p>
-                    <p>
-                      <strong className="text-slate-800">Aurix AI — Visual Human-AI Collaboration:</strong> Our
-                      workflow canvas is designed so that humans can see, modify, and understand every step of an
-                      AI-driven process. It&apos;s not a black box pipeline. It&apos;s a visual workspace where
-                      human operators maintain full situational awareness of what AI agents are doing, why, and
-                      what they&apos;ll do next. The human is always the conductor, never the passenger.
-                    </p>
+                    <p><strong className="text-slate-800">Truthfulness Over Helpfulness:</strong> Our systems are optimized to be truthful — to give users what they need to know.</p>
+                    <p><strong className="text-slate-800">Human-in-the-Loop by Default:</strong> No Aurix agent executes a consequential action without human approval. This is not configurable. It is structural.</p>
+                    <p><strong className="text-slate-800">Caspian — The Two-Model Advisory Architecture:</strong> Strategy model evaluates business context, Builder model generates implementation.</p>
                   </div>
                 </div>
               </GlassCard>
@@ -275,9 +186,7 @@ export function About() {
 
           {/* Why These Principles Exist */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
-              Why These Principles Exist
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Why These Principles Exist</h2>
             <GlassCard className="p-8 md:p-10 space-y-4">
               <p className="text-slate-600 leading-relaxed">
                 These three pillars didn&apos;t come from a whiteboard session or a consultant&apos;s
@@ -286,28 +195,15 @@ export function About() {
               </p>
               <p className="text-slate-600 leading-relaxed">
                 <strong className="text-slate-800">Transparency First</strong> exists because we spent years
-                debugging systems where nobody could explain how a number was calculated. We sat in meetings
-                where a BI dashboard showed a figure, a stakeholder asked &quot;where does that come
-                from,&quot; and the room went silent. That silence costs organizations millions in bad
-                decisions made on unverifiable data.
+                debugging systems where nobody could explain how a number was calculated.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 <strong className="text-slate-800">Security by Design</strong> exists because we watched
-                organizations bolt security onto systems that were never designed for it, then act surprised
-                when the bolts sheared off. Every major breach we&apos;ve witnessed followed the same
-                pattern: a system built for functionality first, with security treated as someone else&apos;s
-                problem, until it became everyone&apos;s problem.
+                organizations bolt security onto systems that were never designed for it.
               </p>
               <p className="text-slate-600 leading-relaxed">
                 <strong className="text-slate-800">Human-Centric AI</strong> exists because we saw what
-                happens when automation removes human judgment instead of augmenting it. Organizations that
-                automate without governance don&apos;t get efficiency — they get faster mistakes with no
-                circuit breaker.
-              </p>
-              <p className="text-slate-600 leading-relaxed">
-                Aurix isn&apos;t building AI platforms because the market is hot. We&apos;re building them
-                because after 25 years of enterprise architecture, we know exactly what&apos;s missing — and
-                we know exactly how to build it right.
+                happens when automation removes human judgment instead of augmenting it.
               </p>
               <p className="text-slate-600 leading-relaxed italic font-medium">
                 We believe with every line of code we write that there is no such thing as a problem without
@@ -319,60 +215,76 @@ export function About() {
         </div>
       </section>
 
-      {/* Leadership / Team (Abstract) */}
+      {/* Leadership / Team */}
       <section className="py-24 relative">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold text-slate-900 mb-4">Leadership</h2>
-              <p className="text-slate-600 mb-8 text-sm">Founder (Tacoma), CTO (Seattle/Issaquah - Enterprise Cloud Architect), Director of Precision Services (Portland). The 'Super-Cluster' model.</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                {teamMembers.length > 0 ? (
-                  // Use dynamic team members
-                  teamMembers.map((member, i) => (
-                    <div key={member.id || i} className="group relative overflow-hidden rounded-2xl shadow-lg border border-slate-200" style={{ minHeight: '380px' }}>
-                      <div className="absolute inset-0 bg-slate-100 flex items-center justify-center">
-                        {member.photo ? (
-                          <img src={member.photo} alt={member.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <p className="text-slate-600 mb-8 text-sm">The Aurix super-cluster — building enterprise AI from the Pacific Northwest.</p>
+
+              <div className="space-y-4">
+                {teamMembers.map((member) => (
+                  <div key={member.id} className="w-full">
+                    {/* Member Header Row */}
+                    <button
+                      onClick={() => toggleBio(member.id)}
+                      className="w-full flex items-center justify-between p-5 rounded-xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer group"
+                    >
+                      <div className="flex items-center gap-4">
+                        <div className="w-14 h-14 rounded-full overflow-hidden bg-slate-100 flex-shrink-0 border-2 border-sky-200">
+                          {member.photo ? (
+                            <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
+                          ) : (
+                            <div className="w-full h-full flex items-center justify-center">
+                              <User className="w-7 h-7 text-slate-300" />
+                            </div>
+                          )}
+                        </div>
+                        <div className="text-left">
+                          <h4 className="text-lg font-bold text-slate-900 group-hover:text-sky-600 transition-colors">{member.name}</h4>
+                          <p className="text-sm text-sky-600 font-medium">{member.title}</p>
+                          <div className="flex items-center gap-3 mt-1">
+                            {member.location && (
+                              <span className="flex items-center gap-1 text-xs text-slate-400">
+                                <MapPin className="w-3 h-3" />{member.location}
+                              </span>
+                            )}
+                            {member.email && (
+                              <span className="flex items-center gap-1 text-xs text-slate-400">
+                                <Mail className="w-3 h-3" />{member.email}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex-shrink-0 ml-4">
+                        {expandedBio === member.id ? (
+                          <ChevronUp className="w-5 h-5 text-sky-500" />
                         ) : (
-                          <User className="w-20 h-20 text-slate-300" />
+                          <ChevronDown className="w-5 h-5 text-slate-400 group-hover:text-sky-500 transition-colors" />
                         )}
                       </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
-                      <div className="absolute bottom-0 left-0 p-6 w-full">
-                        <h4 className="text-white font-bold text-lg">{member.name}</h4>
-                        <p className="text-sky-300 text-sm font-medium mb-2">{member.title}</p>
-                        {member.description && (
-                          <p className="text-slate-300 text-xs line-clamp-3 leading-relaxed mb-2">
-                            {member.description}
-                          </p>
-                        )}
-                        {member.id && (
-                          <Link
-                            to={`/about/team/${member.id}`}
-                            className="inline-flex items-center text-sky-400 hover:text-sky-300 text-xs font-medium transition-colors"
-                          >
-                            Read more &rarr;
-                          </Link>
-                        )}
+                    </button>
+
+                    {/* Expandable Bio Panel */}
+                    {expandedBio === member.id && (
+                      <div className="mt-1 animate-in slide-in-from-top-2 fade-in duration-300">
+                        <div
+                          className="rounded-xl overflow-hidden shadow-lg border border-sky-200"
+                          style={{ maxWidth: "950px" }}
+                        >
+                          <div className="bg-sky-600 px-6 py-3">
+                            <h5 className="text-white font-bold text-sm tracking-wide">Executive Bio</h5>
+                          </div>
+                          <div className="bg-white px-6 py-5">
+                            <p className="text-slate-600 leading-relaxed text-sm">{member.bio}</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  ))
-                ) : (
-                  // Fallback to placeholders if no records
-                  [1, 2, 3, 4].map((i) => (
-                    <div key={i} className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-lg border border-slate-200">
-                       <div className="absolute inset-0 bg-slate-200 animate-pulse flex items-center justify-center">
-                          <User className="w-16 h-16 text-slate-300 opacity-50" />
-                       </div> 
-                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60" />
-                       <div className="absolute bottom-0 left-0 p-6">
-                         <h4 className="text-white font-bold text-lg">Executive Name</h4>
-                         <p className="text-sky-300 text-sm">Position Title</p>
-                       </div>
-                     </div>
-                  ))
-                )}
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
 

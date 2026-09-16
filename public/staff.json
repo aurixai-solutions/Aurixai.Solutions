@@ -1,0 +1,22 @@
+[
+  {
+    "id": "nickie",
+    "name": "Nickie",
+    "title": "Founder & CEO",
+    "location": "Tacoma, WA",
+    "email": "",
+    "phone": "",
+    "photo": "/staff/nickie.jpg",
+    "bio": "Nickie founded Aurix AI Solutions with a vision to build enterprise AI platforms rooted in transparency, security, and human-centric design. With over 25 years of experience in enterprise architecture, she leads the company's strategic direction and product vision from the Pacific Northwest super-cluster."
+  },
+  {
+    "id": "eric",
+    "name": "Eric",
+    "title": "Chief Technology Officer",
+    "location": "Seattle / Issaquah, WA",
+    "email": "",
+    "phone": "",
+    "photo": "/staff/eric.jpg",
+    "bio": "Eric serves as Enterprise Cloud Architect and CTO, overseeing the technical architecture and engineering direction of the Aurix platform. Based in the Seattle/Issaquah corridor, he leads the development of core infrastructure, AI orchestration, and cloud-native systems."
+  }
+]
