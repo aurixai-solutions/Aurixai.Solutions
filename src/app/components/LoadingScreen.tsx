@@ -52,10 +52,9 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
       if (src) preloadModule(src);
     });
 
-    // Also eagerly fetch the CompareModal and standalone page modules
+    // Also eagerly fetch the standalone page modules
     // by using dynamic import (Vite will resolve and cache them)
     const modulePromises = [
-      import("./CompareModal").catch(() => {}),
       import("./MagicQuadrantModal").catch(() => {}),
     ];
 
